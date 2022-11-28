@@ -231,6 +231,15 @@
           "menu_3": "legal",
           "copy": "All Rights Reserved | All other trademarks and logos belong to their respective corporate and\/or franchisee clients."
         }
+      },
+      "custom-header": {
+        "type": "custom-header",
+        "settings": {
+          "primary_logo": "shopify:\/\/shop_images\/logo-white.png",
+          "secondary_logo": "shopify:\/\/shop_images\/site-logo.png",
+          "mobile_logo": "shopify:\/\/shop_images\/logo-white.png",
+          "main_menu": "main-menu"
+        }
       }
     },
     "content_for_index": [
