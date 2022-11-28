@@ -1,14 +1,16 @@
 <!-- call to action section -->
 
 <section class="call-to-action-sec">
-  <div class="call-to-action-block" style="background-image: url('assets/imgs/call-to-action-bg.jpg');">
+  <div class="call-to-action-block" loading="lazy" style="background-image: url('{{ section.settings.image | img_url: 'master' }}');">
     <div class="desc-block">
       <h4 data-aos="fade-left" data-aos-duration="1000" class="title">
-        Magnification Of Multiple Formats from Academy To Full Frame And 2 X Anamorphic.
+        {{ section.settings.heading }}
       </h4>
-      <a data-aos="fade-up" data-aos-duration="1000" href="products.html" class="primary-btn mx-auto">
-        <span>DISCOVER OUR PRODUCTS</span>
-      </a>
+      {%- if section.settings.button_text != blank -%}
+        <a data-aos="fade-up" data-aos-duration="1000" href="{{ section.settings.button_url }}" class="primary-btn mx-auto">
+          <span>{{ section.settings.button_text }}</span>
+        </a>
+      {%- endif -%}
     </div>
   </div>
 </section>
