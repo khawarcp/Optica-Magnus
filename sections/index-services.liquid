@@ -1,0 +1,53 @@
+<!-- services section -->
+
+<section class="services-sec">
+  <div class="services-container">
+    <div class="servces-row flex-nowrap">
+      {%- for block in section.blocks -%}
+        <div data-aos="{% if forloop.first %}fade-down{% elsif forloop.index == 2 %}fade-up{% elsif forloop.index == 3 %}fade-down{% elsif forloop.index == 4 %}fade-up{% elsif forloop.index == 5 %}fade-right{% endif %}" data-aos-duration="1300" class="services-card">
+          <div class="icon-block">
+            {% if block.settings.image != blank %}
+              <img src="{{ block.settings.image | img_url: 'master' }}" alt="{{ block.settings.image.alt }}" class="img-fluid">
+            {% else %}
+              <img src="{{ 'product-1' | placeholder_svg_tag }}" alt="super_icon" class="img-fluid">
+            {% endif %}
+          </div>
+          <h5 class="title text-truncate">
+            {{ block.settings.heading }}
+          </h5>
+        </div>
+      {%- endfor -%}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+  {
+    "name": "Services",
+    "settings": [],
+    "blocks": [
+      {
+        "name": "Service",
+        "type": "service",
+        "limit": 5,
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image"
+          }, {
+            "type": "text",
+            "id": "heading",
+            "label": "Heading"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Services",
+        "category": "Custom Sections"
+      }
+    ]
+  }
+{% endschema %}

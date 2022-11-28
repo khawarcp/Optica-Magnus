@@ -30,9 +30,59 @@
       ],
       "settings": {
       }
+    },
+    "d113bb7b-a619-4459-9617-13fc7c19a48a": {
+      "type": "index-services",
+      "blocks": {
+        "fd0e6349-84d9-43f1-94cc-11b87fe3b197": {
+          "type": "service",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/super_icon_9ea9c3fd-9dfd-413e-8497-171bfbb8053b.png",
+            "heading": "ACADEMY"
+          }
+        },
+        "71ecad6d-8ef9-4102-a397-dc1b2dc06560": {
+          "type": "service",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/super_icon2.png",
+            "heading": "SUPER-35"
+          }
+        },
+        "fc7621be-09f6-4f05-90c0-ea0850422a4d": {
+          "type": "service",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/super_icon3.png",
+            "heading": "4K ON ARRI LF"
+          }
+        },
+        "a3c9cdf2-c7f7-44a2-8bbf-23be91abd941": {
+          "type": "service",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/super_icon4.png",
+            "heading": "LARGE FORMAT"
+          }
+        },
+        "7f656c73-eba7-4f18-a87e-854163614ed6": {
+          "type": "service",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/super_icon5.png",
+            "heading": "ACADEMY"
+          }
+        }
+      },
+      "block_order": [
+        "fd0e6349-84d9-43f1-94cc-11b87fe3b197",
+        "71ecad6d-8ef9-4102-a397-dc1b2dc06560",
+        "fc7621be-09f6-4f05-90c0-ea0850422a4d",
+        "a3c9cdf2-c7f7-44a2-8bbf-23be91abd941",
+        "7f656c73-eba7-4f18-a87e-854163614ed6"
+      ],
+      "settings": {
+      }
     }
   },
   "order": [
-    "98bf8f6a-3698-414f-8eda-c161d5e5bdf5"
+    "98bf8f6a-3698-414f-8eda-c161d5e5bdf5",
+    "d113bb7b-a619-4459-9617-13fc7c19a48a"
   ]
 }
