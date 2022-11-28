@@ -22,21 +22,11 @@
             "button_text": "DISCOVER OUR PRODUCTS",
             "button_url": ""
           }
-        },
-        "4211ba94-5af1-4451-b9e9-0984fab0f052": {
-          "type": "Slide",
-          "settings": {
-            "heading": "",
-            "subheading": "",
-            "button_text": "",
-            "button_url": ""
-          }
         }
       },
       "block_order": [
         "31343c22-9d07-40f9-af9f-379459051dc5",
-        "4a90852a-f77f-493d-9303-61b4bda49e9b",
-        "4211ba94-5af1-4451-b9e9-0984fab0f052"
+        "4a90852a-f77f-493d-9303-61b4bda49e9b"
       ],
       "settings": {
       }
