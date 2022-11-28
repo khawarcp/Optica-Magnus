@@ -9,14 +9,14 @@
             <div class="slider-content-block d-flex flex-column justify-content-between align-items-center">
               <div class="header-block">
                 <h2 data-aos="fade-left">
-                  OPTICA MAG<span>NUS</span>
+                  {{ block.settings.subheading }}
                 </h2>
-                <h1 data-aos="fade-up">EXPANDING YOUR HORIZON</h1>
+                <h1 data-aos="fade-up">{{ block.settings.subheading }}</h1>
               </div>
               <div class="buttons-block">
                 <a data-aos="zoom-in" href="products.html" class="primary-btn">
                   <span>
-                    DISCOVER OUR PRODUCTS
+                    {{ block.settings.button_text }}
                   </span>
                 </a>
                 <button id="scrollBtn" class="mx-auto d-block">
