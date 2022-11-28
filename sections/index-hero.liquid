@@ -1,0 +1,47 @@
+<!-- call to action section -->
+
+<section class="call-to-action-sec">
+  <div class="call-to-action-block" style="background-image: url('assets/imgs/call-to-action-bg.jpg');">
+    <div class="desc-block">
+      <h4 data-aos="fade-left" data-aos-duration="1000" class="title">
+        Magnification Of Multiple Formats from Academy To Full Frame And 2 X Anamorphic.
+      </h4>
+      <a data-aos="fade-up" data-aos-duration="1000" href="products.html" class="primary-btn mx-auto">
+        <span>DISCOVER OUR PRODUCTS</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+  {
+    "name": "Hero",
+    "settings": [
+      {
+        "type": "text",
+        "id": "heading",
+        "label": "Heading",
+        "default": "Magnification Of Multiple Formats from Academy To Full Frame And 2 X Anamorphic."
+      }, {
+        "type": "image_picker",
+        "id": "image",
+        "label": "Image"
+      }, {
+        "type": "text",
+        "id": "button_text",
+        "label": "Button Text",
+        "default": "DISCOVER OUR PRODUCTS"
+      }, {
+        "type": "url",
+        "id": "button_url",
+        "label": "Button URL"
+      }
+    ],
+    "presets": [
+      {
+        "category": "Custom Sections",
+        "name": "Hero"
+      }
+    ]
+  }
+{% endschema %}
