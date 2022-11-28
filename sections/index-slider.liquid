@@ -4,7 +4,11 @@
   <div class="hero-slider-home">
     {% for block in section.blocks %}
       <div class="slide-main">
-        <div class="slider-card" loading="lazy" style="background-image: url('{{ block.settings.image | img_url: 'master' }}');">
+        {% if block.settings.image != blank %}
+          <div class="slider-card" loading="lazy" style="background-image: url('{{ block.settings.image | img_url: 'master' }}');">
+          {% else %}
+            <div class="slider-card" loading="lazy" style="background-image: url('{{ 'collecion-1' | placeholder_svg_tag }}');"></div>
+          {% endif %}
           <div class="container">
             <div class="slider-content-block d-flex flex-column justify-content-between align-items-center">
               <div class="header-block">
