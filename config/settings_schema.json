@@ -87,6 +87,17 @@
     ]
   },
   {
+    "name": "Announcement Bar",
+    "settings": [
+      {
+        "type": "checkbox",
+        "id": "show_bar",
+        "label": "Show Announcement",
+        "default": false
+      }
+    ]
+  },
+  {
     "name": "t:settings_schema.typography.name",
     "settings": [
       {
