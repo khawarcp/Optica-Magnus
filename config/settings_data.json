@@ -214,8 +214,28 @@
         "settings": {
           "color_scheme": "background-1"
         }
+      },
+      "custom-footer": {
+        "type": "custom-footer",
+        "settings": {
+          "footer_logo": "shopify:\/\/shop_images\/ft-logo.png",
+          "address": "7095 Hollywood Boulevard\n#575 Hollywood, CA 90028",
+          "phone": "1-800-495-2127",
+          "button_text": "Visits by Appointment Only",
+          "button_url": "",
+          "heading_1": "our PRODUCTS",
+          "menu_1": "product-menu",
+          "heading_2": "ABOUT OPTICA MAGNUS",
+          "menu_2": "footer",
+          "heading_3": "LEGAL",
+          "menu_3": "legal",
+          "copy": "All Rights Reserved | All other trademarks and logos belong to their respective corporate and\/or franchisee clients."
+        }
       }
-    }
+    },
+    "content_for_index": [
+
+    ]
   },
   "presets": {
     "Default": {

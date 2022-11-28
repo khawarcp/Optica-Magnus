@@ -5,32 +5,40 @@
         <div class="ft-logo-col">
           <div class="ft-logo-block">
             <div class="ft-logo">
-              <a href="index.html">
-                <img src="assets/imgs/ft-logo.png" alt="Optica Magnus" class="img-fluid">
+              <a href="{{ routes.root_url }}">
+                {% if section.settings.footer_logo != blank %}
+                  <img src="{{ section.settings.footer_logo | img_url: 'master' }}" loading="lazy" alt="{{ shop.name }}" class="img-fluid">
+                {% endif %}
               </a>
             </div>
             <ul class="ft-caontact">
-              <li>
-                <div class="icon-block">
-                  <img src="assets/imgs/pointer-icon.png" alt="pointer-icon" class="img-fluid">
-                </div>
-                <a href="#">
-                  7095 Hollywood Boulevard <br> #575 Hollywood, CA 90028
-                </a>
-              </li>
-              <li>
-                <div class="icon-block">
-                  <img src="assets/imgs/ph-icon.png" alt="ph-icon" class="img-fluid">
-                </div>
+              {%- if section.settings.address != blank -%}
+                <li>
+                  <div class="icon-block">
+                    <img src="{{ 'pointer-icon.png' | asset_img_url : "master" }}" loading="lazy" alt="pointer-icon" class="img-fluid">
+                  </div>
+                  <a href="#">
+                    {{ section.settings.address | newline_to_br }}
+                  </a>
+                </li>
+              {%- endif -%}
+              {% if section.settings.phone != blank %}
+                <li>
+                  <div class="icon-block">
+                    <img src="{{ 'ph-icon.png' | asset_img_url : "master" }}" loading="lazy" alt="ph-icon" class="img-fluid">
+                  </div>
 
-                <a href="tel:1-800-495-2127">
-                  1-800-495-2127
-                </a>
-              </li>
+                  <a href="tel:{{ section.settings.phone }}">
+                    {{ section.settings.phone }}
+                  </a>
+                </li>
+              {% endif %}
             </ul>
-            <a href="#" class="visit-link">
-              Visits by Appointment Only
-            </a>
+            {%- if section.settings.button_text != blank -%}
+              <a href="{{ section.settings.button_url }}" class="visit-link">
+                {{ section.settings.button_text }}
+              </a>
+            {%- endif -%}
           </div>
         </div>
         <div class="ft-right-col">
@@ -38,92 +46,44 @@
             <div class="ft-links-row d-flex flex-wrap">
               <div class="ft-products-col">
                 <h3 class="ft-title">
-                  our PRODUCTS
+                  {{ section.settings.heading_1 }}
                 </h3>
                 <ul class="ft-links-ul">
-                  <li>
-                    <a href="#">
-                      Academy to 2x Anamorphic
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      Anamorphic 2x Angineux/Cooke
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      Anamorphic 2x Fujinon
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      Fujinon Academy to Full Frame Opengate
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      Fujinon Academy to Full Frame Netflix
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      Fujinon Academy to Opengate
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      Fujinon Academy to S35 Opengate
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      Xpander Academy to Super 35
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      Xpander Super 35 to Full Frame
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      Xpander Super 35 to Full Frame Netflix Format
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      Xpander Super35 to S35 Opengate
-                    </a>
-                  </li>
+                  {%- for link in linklists[section.settings.menu_1].links -%}
+                    <li>
+                      <a href="{{ link.url }}">
+                        {{ link.title }}
+                      </a>
+                    </li>
+                  {%- endfor -%}
                 </ul>
               </div>
               <div class="ft-about-col">
                 <h3 class="ft-title">
-                  ABOUT OPTICA MAGNUS
+                  {{ section.settings.heading_2 }}
                 </h3>
                 <ul class="ft-links-ul">
-                  <li>
-                    <a href="#">Our Vision</a>
-                  </li>
-                  <li>
-                    <a href="#">News</a>
-                  </li>
-                  <li>
-                    <a href="#">Contact Us</a>
-                  </li>
+                  {%- for link in linklists[section.settings.menu_2].links -%}
+                    <li>
+                      <a href="{{ link.url }}">
+                        {{ link.title }}
+                      </a>
+                    </li>
+                  {%- endfor -%}
                 </ul>
               </div>
               <div class="ft-last-col">
                 <h3 class="ft-title">
-                  LEGAL
+                  {{ section.settings.heading_3 }}
                 </h3>
                 <ul class="ft-links-ul">
-                  <li>
-                    <a href="#">
-                      Privacy Notice
-                    </a>
-                  </li>
+                  {%- for link in linklists[section.settings.menu_3].links -%}
+                    <li>
+                      <a href="{{ link.url }}">
+                        {{ link.title }}
+                      </a>
+                    </li>
+                  {%- endfor -%}
                 </ul>
               </div>
             </div>
@@ -137,9 +97,11 @@
   <div class="ft-copywrite">
     <div class="container">
       <p>
-        Copyright &copy; 2022
-        <a href="index.html">Optica Magnus</a>
-        | All Rights Reserved | All other trademarks and logos belong to their respective corporate and/or franchisee clients.
+        Copyright &copy; {{ 'now' | date: '%Y'  }}
+        <a href="{{ routes.root_url }}">
+          {{ shop.name }}
+        </a>
+        &#124; {{ section.settings.copy }}
       </p>
     </div>
 
