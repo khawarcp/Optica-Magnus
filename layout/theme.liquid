@@ -323,7 +323,9 @@
       {%- render 'cart-drawer' -%}
     {%- endif -%}
 
-    {% section 'announcement-bar' %}
+    {% if settings.show_bar %}
+      {% section 'announcement-bar' %}
+    {% endif %}
     {% section 'custom-header' %}
     <main id="main-content" class="content-for-layout focus-none" role="main" tabindex="-1">
       {{ content_for_layout }}
