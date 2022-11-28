@@ -2,6 +2,32 @@
   "sections": {
     "a614d39c-9014-4509-a3e5-5f5cbdb9d209": {
       "type": "index-slider",
+      "blocks": {
+        "4849199b-2a15-473b-8908-feae34715899": {
+          "type": "Slide",
+          "settings": {
+            "heading": "EXPANDING YOUR HORIZON",
+            "subheading": "OPTICA MAG<span>NUS<\/span>",
+            "image": "shopify:\/\/shop_images\/banner-bg-img.jpg",
+            "button_text": "DISCOVER OUR PRODUCTS",
+            "button_url": ""
+          }
+        },
+        "dfc490a7-d135-4ef8-bf59-cf3185e799ea": {
+          "type": "Slide",
+          "settings": {
+            "heading": "EXPANDING YOUR HORIZON",
+            "subheading": "OPTICA MAG<span>NUS<\/span>",
+            "image": "shopify:\/\/shop_images\/banner-bg-img.jpg",
+            "button_text": "DISCOVER OUR PRODUCTS",
+            "button_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "4849199b-2a15-473b-8908-feae34715899",
+        "dfc490a7-d135-4ef8-bf59-cf3185e799ea"
+      ],
       "settings": {
       }
     }
