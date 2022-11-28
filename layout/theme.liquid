@@ -234,6 +234,12 @@
       document.documentElement.classList.add('shopify-design-mode');
     }
     </script>
+
+    <link rel="stylesheet" href="{{ 'main.css' | asset_url }}">
+    <link rel="stylesheet" href="{{ 'slick.css' | asset_url }}" type="text/css">
+    <!-- AOS css -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  
   </head>
 
   <body class="gradient">
@@ -290,5 +296,15 @@
     {%- if settings.predictive_search_enabled -%}
       <script src="{{ 'predictive-search.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
+
+
+    <script src="{{ 'jquery-3.5.1.slim.min.js' | asset_url }}"></script>
+    <script src="{{ 'slick.min.js' | asset_url }}"></script>
+    <!-- AOS JS  -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="{{ 'custom.js' | asset_url }}"></script>
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/dd2c46839c.js" crossorigin="anonymous"></script>
+    
   </body>
 </html>
