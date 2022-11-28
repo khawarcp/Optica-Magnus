@@ -1395,3 +1395,9 @@ ul, ol {
   text-transform: capitalize;
   margin-bottom: 2.1rem;
 }/*# sourceMappingURL=main.css.map */
+
+
+/*****************************/
+.header__icon--cart{
+  margin-right: 0;
+}
