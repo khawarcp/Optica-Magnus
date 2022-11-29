@@ -328,7 +328,7 @@
               </p>
             {%- when 'title' -%}
               <div class="title" {{ block.shopify_attributes }}>
-                <h1>{{ product.title | escape }}</h1>  
+                <h3 class="title">{{ product.title | escape }}</h3>  
               </div>
             {%- when 'price' -%}
               <div class="no-js-hidden" id="price-{{ section.id }}" role="status" {{ block.shopify_attributes }}>
