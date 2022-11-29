@@ -326,10 +326,8 @@
               >
                 {{- block.settings.text -}}
               </p>
-            {%- when 'title' -%}
-              <div {{ block.shopify_attributes }}>
-                <h3 class="title">{{ product.title | escape }}</h3>
-              </div>
+            {%- when 'title' -%}              
+                <h3 class="title">{{ product.title | escape }}</h3>              
             {%- when 'price' -%}
               <div class="no-js-hidden" id="price-{{ section.id }}" role="status" {{ block.shopify_attributes }}>
                 {%- render 'price', product: product, use_variant: true, show_badges: true, price_class: 'price--large' -%}
