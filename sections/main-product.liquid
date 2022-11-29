@@ -308,6 +308,7 @@
       </media-gallery>
     </div>
     <div class="grid__item{% if settings.page_width > 1400 and section.settings.media_size == "small" %} product__info-wrapper--extra-padding{% endif %} product-dt-col">
+      <div data-aos="fade-left" data-aos-duration="1000"class="product-dt-desc-block">
       <div
         id="ProductInfo-{{ section.id }}"
         class="product__info-container{% if section.settings.enable_sticky_info %} product__info-container--sticky{% endif %}"
@@ -795,6 +796,7 @@
           {{ 'products.product.view_full_details' | t }}
           {% render 'icon-arrow' %}
         </a>
+      </div>
       </div>
     </div>
     {%- if section.settings.media_position == 'right' -%}
