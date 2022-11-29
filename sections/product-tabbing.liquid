@@ -18,12 +18,18 @@
       <div class="tab-content">
         <div data-aos="fade-up" data-aos-duration="1100" data-target="description" class="ctm-tabs-pan active">
           <div class="desciption_img-block">
-            <img src="assets/imgs/desciption_img.jpg" alt="desciption_img" class="img-fluid">
+            <img src="{{ section.settings.info_image | img_url: 'master' }}" loading="lazy" alt="{{ section.settings.info_image.alt }}" class="img-fluid">
+            <div class="rte">
+              {{ section.settings.info_text }}
+            </div>
           </div>
         </div>
         <div data-aos="fade-up" data-aos-duration="1100" data-target="technical_info_tab" class="ctm-tabs-pan">
           <div class="technical-info-block">
-            <img src="assets/imgs/technical-info-img.jpg" alt="technical-info-img" class="img-fluid">
+            <img src="{{ section.settings.tech_image | img_url: 'master' }}" loading="lazy" alt="{{ section.settings.info_image.alt }}" class="img-fluid">
+            <div class="rte">
+              {{ section.settings.tech_text }}
+            </div>
           </div>
         </div>
       </div>
