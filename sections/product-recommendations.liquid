@@ -20,8 +20,8 @@
   }
 {%- endstyle -%}
 
-<div class="color-{{ section.settings.color_scheme }} gradient no-js-hidden">
-  <product-recommendations class="product-recommendations container section-{{ section.id }}-padding isolate" data-url="{{ routes.product_recommendations_url }}?section_id={{ section.id }}&product_id={{ product.id }}&limit={{ section.settings.products_to_show }} related-products-sec">
+<div class="color-{{ section.settings.color_scheme }} gradient no-js-hidden related-products-sec">
+  <product-recommendations class="product-recommendations container section-{{ section.id }}-padding isolate" data-url="{{ routes.product_recommendations_url }}?section_id={{ section.id }}&product_id={{ product.id }}&limit={{ section.settings.products_to_show }}">
     {% if recommendations.performed and recommendations.products_count > 0 %}
       <div class="sec-header">
         <h3 data-aos="fade-right" data-aos-duration="1100" class="secondary-title">
