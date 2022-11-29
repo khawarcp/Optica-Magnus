@@ -628,7 +628,7 @@ ul, ol {
 }
 #site-footer::before {
   content: "";
-  background-image: url("../../assets/imgs/footer-bg.png");
+  background-image: url("https://cdn.shopify.com/s/files/1/0682/9624/5563/files/footer-bg.png?v=1669717701");
   position: absolute;
   left: 0;
   bottom: 0;
