@@ -1423,7 +1423,8 @@ h2{
   margin-top: 10px;
 }
 
-.product--medium:not(.product--no-media) .product__media-wrapper, .product--small:not(.product--no-media) .product__info-wrapper{
+.product--medium:not(.product--no-media) .product__media-wrapper,
+.product--medium:not(.product--no-media) .product__info-wrapper{
   width: unset;
   max-width: unset;
 }
