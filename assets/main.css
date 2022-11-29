@@ -1228,7 +1228,7 @@ ul, ol {
   }
 }
 .product-dt-sec .product-dt-desc-block .title {
-  font-size: 3.57rem;
+  font-size: 3.45rem;
   line-height: 5.1rem;
   font-weight: 700;
   color: #424242;
@@ -1361,6 +1361,7 @@ ul, ol {
   align-items: center;
 }
 
+
 .product-dt-row {
   display: flex;
   flex-wrap: wrap;
@@ -1421,4 +1422,8 @@ h2{
 
 .collection .primary-btn {
   margin-top: 10px;
+}
+
+.product-dt-sec .product-dt-row {
+  gap: 3.2rem !important;
 }

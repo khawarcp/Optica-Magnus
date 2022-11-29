@@ -36,9 +36,9 @@
     {% if recommendations.performed and recommendations.products_count > 0 %}
 
 
-      <ul class="grid product-grid grid--{{ section.settings.columns_desktop }}-col-desktop grid--{{ section.settings.columns_mobile }}-col-tablet-down" role="list">
+      <ul class="grid product-grid grid--{{ section.settings.columns_desktop }}-col-desktop grid--{{ section.settings.columns_mobile }}-col-tablet-down product-row" role="list">
         {% for recommendation in recommendations.products %}
-          <li class="grid__item">
+          <li class="pd-col">
             {% render 'custom-product-card'
              , card_product: recommendation
              , show_vendor: section.settings.show_vendor
@@ -68,24 +68,6 @@
         "label": "t:sections.product-recommendations.settings.heading.label"
       },
       {
-        "type": "select",
-        "id": "heading_size",
-        "options": [
-          {
-            "value": "h2",
-            "label": "t:sections.all.heading_size.options__1.label"
-          }, {
-            "value": "h1",
-            "label": "t:sections.all.heading_size.options__2.label"
-          }, {
-            "value": "h0",
-            "label": "t:sections.all.heading_size.options__3.label"
-          }
-        ],
-        "default": "h1",
-        "label": "t:sections.all.heading_size.label"
-      },
-      {
         "type": "range",
         "id": "products_to_show",
         "min": 2,
@@ -93,7 +75,8 @@
         "step": 1,
         "default": 4,
         "label": "t:sections.product-recommendations.settings.products_to_show.label"
-      }, {
+      },
+      {
         "type": "range",
         "id": "columns_desktop",
         "min": 1,
