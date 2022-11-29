@@ -1,6 +1,10 @@
 <section class="products-banner">
-  {% if template contains 'collection' %}
+  {% if template contains 'collection'  %}
+    {% if collection.image != blank %}
     <div class="banner-content" loading="lazy" style="background-image: url('{{ collection.image | img_url: 'masater' }}');"></div>
+     {% else %}
+    <div class="banner-content" loading="lazy" style="background-image: url('{{ section.settings.image | img_url: 'masater' }}');">    
+    {% endif %}
   {% else %}
     <div class="banner-content" loading="lazy" style="background-image: url('{{ section.settings.image | img_url: 'masater' }}');">
     {% endif %}
