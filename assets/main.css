@@ -1362,12 +1362,6 @@ ul, ol {
 }
 
 
-.product--medium:not(.product--no-media) .product__media-wrapper,
-.product--medium:not(.product--no-media) .product__info-wrapper {
-   width: unset !important;
-    max-width: unset !important;
-   }
-
 .product-dt-row {
   display: flex;
   flex-wrap: wrap;
