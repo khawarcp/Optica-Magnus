@@ -1417,3 +1417,8 @@ h2{
 .collection-hero__description {
   max-width: 100%;
 }
+
+
+.collection .primary-btn {
+  margin-top: 10px;
+}
