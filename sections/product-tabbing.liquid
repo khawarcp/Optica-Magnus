@@ -18,18 +18,20 @@
       <div class="tab-content">
         <div data-aos="fade-up" data-aos-duration="1100" data-target="description" class="ctm-tabs-pan active">
           <div class="desciption_img-block">
-            <img src="{{ section.settings.info_image | img_url: 'master' }}" loading="lazy" alt="{{ section.settings.info_image.alt }}" class="img-fluid">
-            <div class="rte">
-              {{ section.settings.info_text }}
-            </div>
+            {% if section.settings.info_image != blank %}
+              <img src="{{ section.settings.info_image | img_url: 'master' }}" loading="lazy" alt="{{ section.settings.info_image.alt }}" class="img-fluid">
+            {% else %}
+              {{ 'collection-1' | placeholder_svg_tag }}
+            {% endif %}
           </div>
         </div>
         <div data-aos="fade-up" data-aos-duration="1100" data-target="technical_info_tab" class="ctm-tabs-pan">
           <div class="technical-info-block">
-            <img src="{{ section.settings.tech_image | img_url: 'master' }}" loading="lazy" alt="{{ section.settings.info_image.alt }}" class="img-fluid">
-            <div class="rte">
-              {{ section.settings.tech_text }}
-            </div>
+            {%- if section.settings.tech_image != blank -%}
+              <img src="{{ section.settings.tech_image | img_url: 'master' }}" loading="lazy" alt="{{ section.settings.info_image.alt }}" class="img-fluid">
+            {%- else -%}
+              {{ 'collection-1' | placeholder_svg_tag }}
+            {%- endif -%}
           </div>
         </div>
       </div>
@@ -48,17 +50,9 @@
         "id": "info_image",
         "label": "Description Image"
       }, {
-        "type": "richtext",
-        "id": "info_text",
-        "label": "Description Text"
-      }, {
         "type": "image_picker",
         "id": "tech_image",
         "label": "Technical Image"
-      }, {
-        "type": "richtext",
-        "id": "tech_text",
-        "label": "Text"
       }
     ]
   }
