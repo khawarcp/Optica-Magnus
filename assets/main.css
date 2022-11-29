@@ -1402,6 +1402,10 @@ ul, ol {
   margin-right: 0;
 }
 
+h2{
+  letter-spacing: normal;
+}
+
 .cart-count-bubble{
   left: 1.4rem;
 }
