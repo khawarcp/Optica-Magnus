@@ -59,6 +59,10 @@
     "tabbing": {
       "type": "product-tabbing",
       "settings": {
+        "info_image": "{{ product.metafields.custom.description_image.value }}",
+        "info_text": "<p>{{ product.metafields.custom.description_text | metafield_tag }}<\/p>",
+        "tech_image": "{{ product.metafields.custom.technical_information_image.value }}",
+        "tech_text": "<p>{{ product.metafields.custom.technical_information_text | metafield_tag }}<\/p>"
       }
     },
     "product-recommendations": {
