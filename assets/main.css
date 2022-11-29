@@ -1425,8 +1425,8 @@ h2{
 
 .product--medium:not(.product--no-media) .product__media-wrapper,
 .product--medium:not(.product--no-media) .product__info-wrapper{
-  width: unset;
-  max-width: unset;
+  width: unset !important;
+  max-width: unset !important;
 }
 
 .product-dt-sec .product-dt-row {
