@@ -1401,3 +1401,7 @@ ul, ol {
 .header__icon--cart{
   margin-right: 0;
 }
+
+.cart-count-bubble{
+  left: 1.4rem;
+}
