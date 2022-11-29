@@ -1413,3 +1413,7 @@ h2{
 .main-content-margin {
   margin-top: 8.1rem;
 }
+
+.collection-hero__description {
+  max-width: 100%;
+}
