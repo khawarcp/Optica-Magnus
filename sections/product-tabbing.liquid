@@ -1,0 +1,41 @@
+<!-- product details tabs section -->
+<section class="product-dt-tabs-sec">
+  <div class="container">
+    <div class="custom-tabs">
+      <ul class="ctm-tabs-ul d-flex align-items-center">
+        <li class="active">
+          <span data-toggle="description">
+            Description
+          </span>
+        </li>
+        <li>
+          <span data-toggle="technical_info_tab">
+            Technical Information
+          </span>
+        </li>
+
+      </ul>
+      <div class="tab-content">
+        <div data-aos="fade-up" data-aos-duration="1100" data-target="description" class="ctm-tabs-pan active">
+          <div class="desciption_img-block">
+            <img src="assets/imgs/desciption_img.jpg" alt="desciption_img" class="img-fluid">
+          </div>
+        </div>
+        <div data-aos="fade-up" data-aos-duration="1100" data-target="technical_info_tab" class="ctm-tabs-pan">
+          <div class="technical-info-block">
+            <img src="assets/imgs/technical-info-img.jpg" alt="technical-info-img" class="img-fluid">
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</section>
+
+{% schema %}
+  {
+    "name": "Product Tabbing",
+    "settings": []
+  }
+{% endschema %}
