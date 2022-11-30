@@ -1499,3 +1499,19 @@ h2{
 .product__description p {
   letter-spacing: normal;
 }
+
+.product__media.media.media--transparent.gradient.global-media-settings>img {
+  height: 100% !important;
+  object-fit: contain;
+  padding: 80px;
+}
+
+.product__media.media.media--transparent.gradient.global-media-settings {  
+  max-width: 100%;
+  border: 1px solid #ced4da;
+  height: 58.8rem;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
