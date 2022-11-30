@@ -1575,7 +1575,7 @@ button.shopify-payment-button__button::after {
   border-color:#ced4da !important;
 }
 
-.button{
+/* .button{
   height: 4rem;
   min-width: 18.4rem !important;
   width: -webkit-fit-content;
@@ -1584,4 +1584,4 @@ button.shopify-payment-button__button::after {
   background-color: #e52520 !important;
   text-decoration: none;
   border-radius: 2px !important;
-}
+} */
