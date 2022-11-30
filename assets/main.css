@@ -1447,6 +1447,6 @@ h2{
   margin-bottom: 0;
 }
 
-.product-dt-sec .product-dt-desc-block .quantity-counter-block{
-  display: unset;
+.quantity:after {
+  box-shadow: none;
 }
