@@ -59,7 +59,7 @@
                   </button>
                 </noscript>
 
-                <button type="submit" id="checkout" class="cart__checkout-button button primary-btn" name="checkout"{% if cart == empty %} disabled{% endif %} form="cart">
+                <button data-aos="zoom-in" type="submit" id="checkout" class="cart__checkout-button button primary-btn" name="checkout"{% if cart == empty %} disabled{% endif %} form="cart">
                   <span>{{ 'sections.cart.checkout' | t }}</span>
                 </button>
               </div>
