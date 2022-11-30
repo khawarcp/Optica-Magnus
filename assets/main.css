@@ -1298,8 +1298,21 @@ ul, ol {
   background-color: #E52520;
 }
 
+.quantity > input,
 .product-dt-sec .product-dt-desc-block .quantity > input,
 .product-dt-sec .product-dt-desc-block .quantity-counter-block > input {
+  background-color: transparent;
+  font-size: 2.2rem;
+  line-height: 2.5rem;
+  font-weight: 500;
+  color: #000;
+  outline: 0;
+  max-width: 5rem;
+  text-align: center;
+  border: 0;
+}
+
+.cart__items .quantity > input{
   background-color: transparent;
   font-size: 2.2rem;
   line-height: 2.5rem;
@@ -1457,4 +1470,26 @@ h2{
   display: flex;
   justify-content: flex-start;
   align-items: center;
+}
+
+
+.cart__items .inceaseBtn{
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+  background-color: #fff;
+}
+
+.cart__items .inceaseBtn:hover{
+  background-color: #E52520;
+}
+
+.cart__items .quantity > input{
+  background-color: transparent;
+  font-size: 2.2rem;
+  line-height: 2.5rem;
+  font-weight: 500;
+  color: #000;
+  outline: 0;
+  max-width: 5rem;
+  text-align: center;
+  border: 0;
 }
