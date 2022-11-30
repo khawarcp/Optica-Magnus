@@ -1626,6 +1626,10 @@ button.shopify-payment-button__button::after {
   border-radius: 2px;
 }
 
+.collection__view-all a:not(.link) {    
+    margin: 1rem auto;
+}
+
 /* .button{
   height: 4rem;
   min-width: 18.4rem !important;
