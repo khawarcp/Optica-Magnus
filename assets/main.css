@@ -1607,9 +1607,13 @@ button.button span,
   transition: 0.4s ease-in-out;
   z-index: 2;
 }
+
+button.button:hover::before, button.button.active::before,
 .customer button.primary-btn:hover::before, .customer button.primary-btn.active::before {
   height: 100%;
 }
+
+button.button::before,
 .customer button.primary-btn::before {
   content: "";
   position: absolute;
