@@ -95,10 +95,10 @@
     {%- if section.settings.show_view_all and more_in_collection -%}
       <div class="center collection__view-all">
         <a href="{{ section.settings.collection.url }}"
-          class="{% if section.settings.view_all_style == 'link' %}link underlined-link{% elsif section.settings.view_all_style == 'solid' %}button{% else %}button button--secondary{% endif %}"
+          class="{% if section.settings.view_all_style == 'link' %}link underlined-link{% elsif section.settings.view_all_style == 'solid' %}button{% else %}button button--secondary{% endif %} primary-btn"
           aria-label="{{ 'sections.featured_collection.view_all_label' | t: collection_name: section.settings.collection.title }}"
         >
-          {{ 'sections.featured_collection.view_all' | t }}
+          <span>{{ 'sections.featured_collection.view_all' | t }}</span>
         </a>
       </div>
     {%- endif -%}
