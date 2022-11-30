@@ -1495,3 +1495,7 @@ h2{
   text-align: center;
   border: 0;
 }
+
+.product__description p {
+  letter-spacing: normal;
+}
