@@ -1450,3 +1450,9 @@ h2{
 .quantity:after {
   box-shadow: none;
 }
+
+.quantity {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
