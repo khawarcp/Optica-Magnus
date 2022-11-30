@@ -1571,6 +1571,6 @@ button.shopify-payment-button__button::after {
 }
 
 .thumbnail[aria-current]{
-  box-shadow: none;
-  border:#ced4da;
+  box-shadow: none !important;
+  border-color:#ced4da !important;
 }
