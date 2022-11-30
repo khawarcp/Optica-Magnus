@@ -1277,6 +1277,8 @@ ul, ol {
   display: flex;
   align-items: center;
 }
+
+.product-dt-sec .product-dt-desc-block .inceaseBtn,
 .product-dt-sec .product-dt-desc-block .quantity-counter-block .inceaseBtn {
   width: 3.6rem;
   height: 3.6rem;
@@ -1288,9 +1290,13 @@ ul, ol {
   background-color: #fff;
   transition: 0.4s ease-in-out;
 }
+
+.product-dt-sec .product-dt-desc-block .inceaseBtn:hover,
 .product-dt-sec .product-dt-desc-block .quantity-counter-block .inceaseBtn:hover {
   background-color: #E52520;
 }
+
+.product-dt-sec .product-dt-desc-block .quantity > input,
 .product-dt-sec .product-dt-desc-block .quantity-counter-block > input {
   background-color: transparent;
   font-size: 2.2rem;
