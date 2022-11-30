@@ -1436,3 +1436,7 @@ h2{
 .price .price-item {
   letter-spacing: normal;
 }
+
+.product .price__container{
+  margin-bottom: 0;
+}
