@@ -1440,3 +1440,7 @@ h2{
 .product .price__container{
   margin-bottom: 0;
 }
+
+.quantity-counter-block{
+  display: unset;
+}
