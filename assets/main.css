@@ -1278,6 +1278,7 @@ ul, ol {
   align-items: center;
 }
 
+.inceaseBtn,
 .product-dt-sec .product-dt-desc-block .inceaseBtn,
 .product-dt-sec .product-dt-desc-block .quantity-counter-block .inceaseBtn {
   width: 3.6rem;
@@ -1291,6 +1292,7 @@ ul, ol {
   transition: 0.4s ease-in-out;
 }
 
+.inceaseBtn:hover,
 .product-dt-sec .product-dt-desc-block .inceaseBtn:hover,
 .product-dt-sec .product-dt-desc-block .quantity-counter-block .inceaseBtn:hover {
   background-color: #E52520;
