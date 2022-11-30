@@ -1432,3 +1432,7 @@ h2{
   margin-top: 0;
   letter-spacing: normal;
 }
+
+.product-dt-sec .product-dt-desc-block .price {
+  letter-spacing: normal;
+}
