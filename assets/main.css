@@ -1630,6 +1630,11 @@ button.shopify-payment-button__button::after {
     margin: 1rem auto;
 }
 
+.cart-items thead th {
+    font-weight: bold;
+    font-size: 12px;
+}
+
 /* .button{
   height: 4rem;
   min-width: 18.4rem !important;
