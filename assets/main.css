@@ -1579,7 +1579,7 @@ button.shopify-payment-button__button::after {
   margin: 0 auto;
 }
 
-button.button,
+
 .customer button.primary-btn {
     min-width: 18.4rem;
     width: -webkit-fit-content;
@@ -1597,7 +1597,7 @@ button.button,
     margin: 20px auto;
 }
 
-button.button span,
+
 .customer button.primary-btn span {
   text-transform: uppercase;
   font-size: 1.4rem;
@@ -1608,12 +1608,12 @@ button.button span,
   z-index: 2;
 }
 
-button.button:hover::before, button.button.active::before,
+
 .customer button.primary-btn:hover::before, .customer button.primary-btn.active::before {
   height: 100%;
 }
 
-button.button::before,
+
 .customer button.primary-btn::before {
   content: "";
   position: absolute;
