@@ -1593,6 +1593,7 @@ button.shopify-payment-button__button::after {
     text-decoration: none;
     position: relative;
     border-radius: 2px;
+    margin: 0 auto;
 }
 
 /* .button{
