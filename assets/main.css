@@ -1579,7 +1579,7 @@ button.shopify-payment-button__button::after {
   margin: 0 auto;
 }
 
-customer button.primary-btn {
+.customer button.primary-btn {
     min-width: 18.4rem;
     width: -webkit-fit-content;
     width: -moz-fit-content;
