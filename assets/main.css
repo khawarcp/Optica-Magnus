@@ -1569,3 +1569,8 @@ button.shopify-payment-button__button::after {
   transition: .4s ease-in-out;
   z-index: 2;
 }
+
+.thumbnail[aria-current]{
+  box-shadow: none;
+  border:#ced4da;
+}
