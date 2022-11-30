@@ -1427,3 +1427,8 @@ h2{
 .product-dt-sec .product-dt-row {
   gap: 3.2rem !important;
 }
+
+.product-dt-sec .product-dt-desc-block .desc>h6 {
+  margin-top: 0;
+  letter-spacing: normal;
+}
