@@ -1575,6 +1575,7 @@ button.shopify-payment-button__button::after {
   border-color:#ced4da !important;
 }
 
+.template-404 .primary-btn,
 .cart__warnings .primary-btn{
   margin: 0 auto;
 }
