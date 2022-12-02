@@ -1652,18 +1652,21 @@ button.shopify-payment-button__button::after {
   }
   
   .section-template--17062378635579__main-padding {
-      padding: 20px 0px !important;
+      padding: 20px 90px !important;
   }
 }
 
 @media only screen and (max-width: 992px) {
   
   .section-template--17062378635579__main-padding {
-      padding: 20px 20px !important;
+      padding: 20px 90px !important;
   }
 }
 
 @media only screen and (max-width: 600px) {
+   .section-template--17062378635579__main-padding {
+      padding: 15px 15px !important;
+  }
   .icon-block a svg {
       width: 15px;
   }
