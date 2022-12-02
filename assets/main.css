@@ -1651,6 +1651,34 @@ button.shopify-payment-button__button::after {
 .section-template--17062378635579__main-padding h1 {
     margin-bottom: 0px !important;
 }
+
+.shopify-challenge__button {
+    height: 40px;
+    min-width: 18.4rem;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: 4.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e52520;
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+    border-radius: 2px;
+    margin: 17px 0px 0px;
+    transition: .4s ease-in-out;
+}
+
+.g-recaptcha {
+    margin: 10px 0px 10px;
+}
+
+.shopify-challenge__button:hover {
+    background-color: #657a87;
+}
+
 @media only screen and (min-width: 1600px) {
   .drawer__inner {
       padding: 0 35px 0 20px !important;
