@@ -1679,6 +1679,28 @@ button.shopify-payment-button__button::after {
     background-color: #657a87;
 }
 
+.customer.reset-password button {
+    height: 40px;
+    min-width: 18.4rem;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: 4.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e52520;
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+    border-radius: 2px;
+    margin: 20px auto 0px;
+    transition: .4s all;
+}
+
+
+.customer.reset-password button:hover {opacity: 0.5;}
+
 @media only screen and (min-width: 1600px) {
   .drawer__inner {
       padding: 0 35px 0 20px !important;
