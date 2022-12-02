@@ -1675,4 +1675,35 @@ button.shopify-payment-button__button::after {
       display: flex;
       align-items: center;
   }
+  .collection.container {
+      max-width: 100%;
+      padding: 0px;
+  }
+  
+  .collection .product-row .pd-col {
+      max-width: 48%;
+    padding-bottom: 10px;
+  }
+  
+  .collection.container ul {
+      gap: 0px;
+  }
+  .product-card:hover .img-block>img {
+      transform: scale(1.05);
+  }
+  .product__media-icon, .thumbnail__badge {
+      display: none;
+  }
+  
+  .product__modal-opener {
+      pointer-events: none;
+      touch-action: none;
+  }
+  product-recommendations .product-row .pd-col {
+      width: 45% !important;
+  }
+  
+  product-recommendations ul {
+      gap: 0px;
+  }
 }
