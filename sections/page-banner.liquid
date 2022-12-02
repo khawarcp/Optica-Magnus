@@ -1,4 +1,10 @@
 <section class="products-banner">
+
+  {% if template == 'collection' %}
+    <p>asasasas</p>
+  {% else %}
+  <p>sasasasa</p>
+  {% endif %}
    {% if template == 'collection' %}
     {% if collection.featured_image != blank %}
     <div class="banner-content" loading="lazy" style="background-image: url('{{ collection.featured_image | img_url: 'master' }}');">
