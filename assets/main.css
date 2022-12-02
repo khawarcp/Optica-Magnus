@@ -1793,4 +1793,10 @@ button.shopify-payment-button__button::after {
   .section-template--17062378635579__form-padding {
       padding-top: 0px !important;
   }
+  .product-card .img-block {
+      height: 160px;
+  }
+  .product-card .img-block>img {
+      max-width: 80%;
+  }
 }
