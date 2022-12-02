@@ -1643,7 +1643,9 @@ button.shopify-payment-button__button::after {
 .drawer__inner {
   padding: 0 30px !important;
 }
-
+.cart-drawer__warnings .drawer__close {
+    right: 10px;
+}
 @media only screen and (min-width: 1600px) {
   .drawer__inner {
       padding: 0 35px 0 20px !important;
