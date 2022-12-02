@@ -1699,7 +1699,7 @@ button.shopify-payment-button__button::after {
 }
 
 
-.customer.reset-password button:hover {opacity: 0.5;}
+.customer.reset-password button:hover {opacity: 0.7;}
 
 @media only screen and (min-width: 1600px) {
   .drawer__inner {
