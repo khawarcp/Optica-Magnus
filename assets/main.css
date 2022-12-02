@@ -1576,6 +1576,7 @@ button.shopify-payment-button__button::after {
 }
 
 .template-404 .primary-btn,
+.cart-drawer .primary-btn,
 .cart__warnings .primary-btn{
   margin: 0 auto;
 }
@@ -1635,14 +1636,3 @@ button.shopify-payment-button__button::after {
     font-weight: bold;
     font-size: 12px;
 }
-
-/* .button{
-  height: 4rem;
-  min-width: 18.4rem !important;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  background-color: #e52520 !important;
-  text-decoration: none;
-  border-radius: 2px !important;
-} */
