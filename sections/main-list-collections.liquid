@@ -1,5 +1,6 @@
 {{ 'component-card.css' | asset_url | stylesheet_tag }}
 {{ 'section-collection-list.css' | asset_url | stylesheet_tag }}
+  <div class="banner-content ASDASD" loading="lazy" style="background-image: url('{{ collection.featured_image | img_url: 'master' }}');"></div>
 
 <div class="page-width">
   <h1 class="title title--primary">{{ section.settings.title | escape }}</h1>
