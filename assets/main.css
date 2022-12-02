@@ -1636,3 +1636,6 @@ button.shopify-payment-button__button::after {
     font-weight: bold;
     font-size: 12px;
 }
+.cart-drawer .cart__checkout-button {
+    height: 40px;
+}
