@@ -1640,6 +1640,10 @@ button.shopify-payment-button__button::after {
     height: 40px;
 }
 
+.drawer__inner {
+  padding: 0 30px !important;
+}
+
 @media only screen and (min-width: 1600px) {
   .drawer__inner {
       padding: 0 35px 0 20px !important;
