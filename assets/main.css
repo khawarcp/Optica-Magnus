@@ -621,6 +621,10 @@ ul, ol {
     display: block;
     margin-bottom: 0px;
     margin-bottom: 4px;
+  border-radius: 10rem;
+  background-color: #E52520;
+  display: block;
+  transition: 0.4s ease-in-out;
 }
 
 #site-header .humberg-icon {
