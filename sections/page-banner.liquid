@@ -1,12 +1,12 @@
 <section class="products-banner">
   {% if template.name == 'collection'  %}
     {% if collection.featured_image != blank %}
-    <div class="banner-content" loading="lazy" style="background-image: url('{{ collection.featured_image | img_url: 'master' }}');">
+    <div class="banner-content" loading="lazy" style="background-image: url('{{ collection.featured_image | img_url: 'master' }}');"></div>
      {% else %}
-    <div class="banner-content" loading="lazy" style="background-image: url('{{ section.settings.image | img_url: 'master' }}');">    
+    <div class="banner-content" loading="lazy" style="background-image: url('{{ section.settings.image | img_url: 'master' }}');"> </div> 
     {% endif %}
   {% else %}
-    <div class="banner-content" loading="lazy" style="background-image: url('{{ section.settings.image | img_url: 'master' }}');">
+    <div class="banner-content" loading="lazy" style="background-image: url('{{ section.settings.image | img_url: 'master' }}');"></div>
     {% endif %}
     <div class="sec-header">
       <h2 data-aos="fade-down" data-aos-duration="1000" class="prime-title">
