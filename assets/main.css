@@ -1649,7 +1649,7 @@ button.shopify-payment-button__button::after {
 
 
 .section-template--17062378635579__main-padding h1 {
-    margin-bottom: 0px;
+    margin-bottom: 0px !important;
 }
 @media only screen and (min-width: 1600px) {
   .drawer__inner {
@@ -1718,6 +1718,6 @@ button.shopify-payment-button__button::after {
       gap: 0px;
   }
   .section-template--17062378635579__form-padding {
-      padding-top: 0px;
+      padding-top: 0px !important;
   }
 }
