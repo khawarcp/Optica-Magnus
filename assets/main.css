@@ -1749,6 +1749,9 @@ button.shopify-payment-button__button::after {
   .section-template--17062378635579__main-padding {
       padding: 20px 90px !important;
   }
+  #site-header .humberg-icon {
+    display: flex !important;
+  }
 }
 
 @media only screen and (max-width: 600px) {
