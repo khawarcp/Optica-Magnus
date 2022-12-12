@@ -5,9 +5,14 @@
     </div>
   </a>
   <div class="desc-block">
-    <span class="date">
-      September 2019
-    </span>
+    {%- if show_date -%}
+      <span class="date">
+        {{ article.published_at | time_tag: format: 'date' }}
+      </span>
+    {%- endif -%}
+    {%- if show_author -%}
+      <span>{{ article.author }}</span>
+    {%- endif -%}
     <h5 class="news-title">
       {{ article.title | truncate: 50 | escape }}
     </h5>
