@@ -208,8 +208,9 @@
           <div class="news-cards-list">
             {% assign min = 0 %}
             {% assign max = blog.articles.size %}
-            {% assign diff = max | minus: min %}
+            {% assign diff = max | minus: min %}            
             {% assign randomNumber = "now" | date: "%N" | modulo: diff | plus: min %}
+            <h1> {{ max }} </h1> <h2> {{ diff }} </h2> <h3> {{ randomNumber }} </h3>
             {% for article_list in blog.articles %}
               {% if forloop.index0 == randomNumber %}
             <div class="news-card">
