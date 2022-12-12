@@ -1,10 +1,19 @@
 {
-    "sections":{
-        "main": {
-            "type" : "policy-content"
-        }
+  "sections": {
+    "2b17bdbe-d6da-4b40-b3b2-0e9051c56917": {
+      "type": "page-banner",
+      "settings": {
+        "heading": "OPTICA MAG<span>NUS<\/span>"
+      }
     },
-    "order":[
-        "main"
-    ]
+    "main": {
+      "type": "policy-content",
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "2b17bdbe-d6da-4b40-b3b2-0e9051c56917",
+    "main"
+  ]
 }
