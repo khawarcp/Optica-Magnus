@@ -211,6 +211,7 @@
             {% assign diff = max | minus: min %}
             {% assign randomNumber = "now" | date: "%N" | modulo: diff | plus: min %}
             {% for article_list in blog.articles %}
+              {% if forloop.index0 == randomNumber %}
             <div class="news-card">
               <a href="{{ article_list.url }}">
                 <div class="img-block">
@@ -238,6 +239,7 @@
                 </a>
               </div>
             </div>
+            {% endif %}
             {% endfor %}
           </div>
       
