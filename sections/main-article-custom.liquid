@@ -205,19 +205,12 @@
           <h3 class="common-title">
             Related News
           </h3>
-          <div class="news-cards-list">
-            {% assign min = 1 %}
-            {% assign max = blog.articles.size %}
-            {% assign diff = max | minus: min %}            
-            {% assign randomNumber1 = "now" | date: "%N" | modulo: diff | plus: min %}
-            {% assign randomNumber2 = "now" | date: "%N" | modulo: diff | plus: min %}
-            {% assign randomNumber3= "now" | date: "%N" | modulo: diff | plus: min %}
-            <h1> {{ max }} </h1> <h2> {{ diff }} </h2> <h3> 1 {{ randomNumber1 }} </h3> <h3>2{{ randomNumber2 }} </h3> <h3> 3{{ randomNumber3 }} </h3>
-
-            {% assign randomNumber = "randomNumber1, randomNumber2, randomNumber3" | split : ',' %}
+          <div class="news-cards-list">  
             
             {% for article_list in blog.articles limit : 3 %}
-              {% if forloop.index0 == randomNumber %}
+              {% if article.title == article_list.title %}
+                {% continue %}
+               {% else %} 
             <div class="news-card">
               <a href="{{ article_list.url }}">
                 <div class="img-block">
@@ -245,8 +238,7 @@
                 </a>
               </div>
             </div>
-            {% endif %}
-              
+            {% endif %}              
             {% endfor %}
           </div>
       
