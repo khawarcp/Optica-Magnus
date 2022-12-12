@@ -206,8 +206,8 @@
             Related News
           </h3>
           <div class="news-cards-list">  
-            {% assign count = blog.articles_count %}
-            {{ count }}
+            {% assign count = 3 %}
+            {{ count | limit }}
             {% for article_list in blog.articles limit : count %}
               {% if article.title == article_list.title %}
                 {% continue %}
