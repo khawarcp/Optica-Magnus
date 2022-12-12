@@ -2508,3 +2508,7 @@ cart-remove-button .icon-remove {
     height: 2.5rem !important;
     width: 2.5rem !important;
 }
+
+.customer ul {
+  padding-left:0 !important;
+}
