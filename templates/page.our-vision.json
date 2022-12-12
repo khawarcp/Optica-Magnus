@@ -12,17 +12,11 @@
       "settings": {
         "heading": "CONTACT"
       }
-    },
-    "form": {
-      "type": "vision-contact-from",
-      "settings": {
-      }
     }
   },
   "order": [
     "3f301863-cfc5-451c-8621-85d3bc029640",
-    "content",
-    "form"
+    "content"
   ]
 }
 
