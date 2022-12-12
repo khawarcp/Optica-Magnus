@@ -21,7 +21,7 @@
     <div class="main-blog container section-{{ section.id }}-padding">
       <div class="d-flex news-list-row flex-wrap {% if section.settings.layout == 'collage' %}blog-articles--collage{% endif %}">
         {%- for article in blog.articles -%}
-          <div class="blog-articles__article article">
+          <div class="news-col">
             {%- render 'article-card-custom'
               , article: article
               , media_height: section.settings.image_height
