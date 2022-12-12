@@ -220,16 +220,16 @@
                 <h5 class="news-title">
                   {{ article_list.title | escape }}
                 </h5>
-                {%- if article.excerpt.size > 0 or article.content.size > 0 -%}
+                {%- if article_list.excerpt.size > 0 or article_list.content.size > 0 -%}
                         <p class="">
-                          {%- if article.excerpt.size > 0 -%}
-                            {{ article.excerpt | strip_html | truncatewords: 10 }}
+                          {%- if article_list.excerpt.size > 0 -%}
+                            {{ article_list.excerpt | strip_html | truncatewords: 10 }}
                           {%- else -%}
-                            {{ article.content | strip_html | truncatewords: 10 }}
+                            {{ article_list.content | strip_html | truncatewords: 10 }}
                           {%- endif -%}
                         </p>
                       {%- endif -%}
-                <a class="readMore-btn" href="news-details.html">
+                <a class="readMore-btn" href="{{ article_list.url }}">
                   Read More {% render 'icon-read-more' →%}
                 </a>
               </div>
