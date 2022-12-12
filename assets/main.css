@@ -2512,3 +2512,13 @@ cart-remove-button .icon-remove {
 .customer ul {
   padding-left:0 !important;
 }
+
+.totals {
+  justify-content:flex-end !important;
+}
+.tax-note {
+  text-align:right !important; 
+}
+.cart__checkout-button {
+  margin-left:auto !important;
+}
