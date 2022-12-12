@@ -217,7 +217,7 @@
             {% assign randomNumber = "randomNumber1, randomNumber2, randomNumber3" | split : ',' %}
             
             {% for article_list in blog.articles limit : 3 %}
-              {% if forloop.index0 == randomNumber1 %}
+              {% if forloop.index0 == randomNumber %}
             <div class="news-card">
               <a href="{{ article_list.url }}">
                 <div class="img-block">
