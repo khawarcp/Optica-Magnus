@@ -213,6 +213,9 @@
             {% assign randomNumber2 = "now" | date: "%N" | modulo: diff | plus: min %}
             {% assign randomNumber3= "now" | date: "%N" | modulo: diff | plus: min %}
             <h1> {{ max }} </h1> <h2> {{ diff }} </h2> <h3> 1 {{ randomNumber1 }} </h3> <h3>2{{ randomNumber2 }} </h3> <h3> 3{{ randomNumber3 }} </h3>
+
+            {% assign randomNumber = "randomNumber1, randomNumber2, randomNumber3" | split : ',' %}
+            
             {% for article_list in blog.articles limit : 3 %}
               {% if forloop.index0 == randomNumber %}
             <div class="news-card">
