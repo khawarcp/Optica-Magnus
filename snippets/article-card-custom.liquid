@@ -6,7 +6,7 @@
   </a>
   <div class="desc-block">
     {%- if show_date -%}
-      <span class="date">
+      <span class="date" {%- if show_author -%} style="margin-right:10px;"{%- endif -%}>
         {{ article.published_at | time_tag: format: 'date' }}
       </span>
     {%- endif -%}
