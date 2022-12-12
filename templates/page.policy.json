@@ -1,10 +1,12 @@
 {
-    "sections":{
-        "main": {
-            "type" : "policy-content"
-        }
-    },
-    "order":[
-        "main"
-    ]
+  "sections": {
+    "main": {
+      "type": "policy-content",
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
 }
