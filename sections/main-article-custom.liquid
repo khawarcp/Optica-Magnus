@@ -206,11 +206,11 @@
             Related News
           </h3>
           <div class="news-cards-list">
-            {% for article in blog.articles %}
+            {% for article_list in blog.articles %}
             <div class="news-card">
               <a href="news-details.html">
                 <div class="img-block">
-                  <img src="assets/imgs/news-img-3.jpg" alt="news-img" class="img-fluid">
+                  <img src="{{ article_list.image | img_url : "master" }}" loading="lazy" alt="{{ article_list.title | escape }}" class="img-fluid">
                 </div>
               </a>
               <div class="desc-block">
