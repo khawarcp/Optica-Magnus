@@ -3,6 +3,8 @@
     "banner": {
       "type": "page-banner",
       "settings": {
+        "background_image": "shopify:\/\/shop_images\/our-vision-bg.jpg",
+        "heading": " OPTICA MAG<span>NUS<\/span>"
       }
     },
     "content": {
