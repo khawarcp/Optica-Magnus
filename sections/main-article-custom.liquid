@@ -207,6 +207,7 @@
           </h3>
           <div class="news-cards-list">  
             {% assign count = blog.articles_count %}
+            {{ count }}
             {% for article_list in blog.articles limit : count %}
               {% if article.title == article_list.title %}
                 {% continue %}
