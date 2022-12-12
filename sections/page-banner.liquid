@@ -6,7 +6,7 @@
     <div class="banner-content" loading="lazy" style="background-image: url('{{ section.settings.background_image | img_url: 'master' }}');">    
     {% endif %}
   {% else %}
-    <div class="banner-content" loading="lazy" {% if template.suffix contains 'policy' and section.settings.background_image != blank %} style="background-image: url('{{ section.settings.background_image | img_url: 'master' }}');" {% else %} style="background-color: #0A1823;" {% endif %}>
+    <div class="banner-content" loading="lazy" {% if template.suffix contains 'policy' or template contains 'blog' and section.settings.background_image != blank %} style="background-image: url('{{ section.settings.background_image | img_url: 'master' }}');" {% else %} style="background-color: #0A1823;" {% endif %}>
     {% endif %}
     <div class="sec-header">
       <h2 data-aos="fade-down" data-aos-duration="1000" class="prime-title">
