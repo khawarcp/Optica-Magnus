@@ -37,7 +37,7 @@
         <span class="badge color-background-1">{{ 'blogs.article.blog' | t }}</span>
       </div>
     {%- endif -%}
-    <a class="readMore-btn" href="news-details.html">
+    <a class="readMore-btn" href="{{ article.url }}">
       Read More {% render 'icon-read-more' %}
     </a>
   </div>
