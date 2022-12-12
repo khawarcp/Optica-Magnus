@@ -19,6 +19,8 @@
           {{ collection.title }}
         {% elsif template contains 'product' %}
           {{ product.title }}
+        {% elsif template contains 'blog' %}
+          {{ blog.title }}  
         {% elsif template contains 'search' %}
           {% if search.terms != blank %}
             {{ search.terms }}
