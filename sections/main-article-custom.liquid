@@ -9,9 +9,17 @@
             {{ blog.title }}
           </h3>
           <div class="pd-card">
-            <div class="news-dt-img-block">
-              <img src="assets/imgs/news-dt-img.jpg" alt="news-dt-img" class="img-fluid">
-            </div>
+            {%- if article.image -%}
+              <div class="news-dt-img-block">
+                <img srcset="{% if article.image.width >= 350 %}{{ article.image | image_url: width: 350 }} 350w,{% endif %}
+                                                      {% if article.image.width >= 750 %}{{ article.image | image_url: width: 750 }} 750w,{% endif %}
+                                                      {% if article.image.width >= 1100 %}{{ article.image | image_url: width: 1100 }} 1100w,{% endif %}
+                                                      {% if article.image.width >= 1500 %}{{ article.image | image_url: width: 1500 }} 1500w,{% endif %}
+                                                      {% if article.image.width >= 2200 %}{{ article.image | image_url: width: 2200 }} 2200w,{% endif %}
+                                                      {% if article.image.width >= 3000 %}{{ article.image | image_url: width: 3000 }} 3000w,{% endif %}
+                                                      {{ article.image | image_url }} {{ article.image.width }}w" sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 }}px, (min-width: 750px) calc(100vw - 10rem), 100vw" src="{{ article.image | image_url: width: 1100 }}" loading="eager" width="{{ article.image.width }}" height="{{ article.image.height }}" alt="{{ article.image.alt | escape }}">
+              </div>
+            {%- endif -%}
             <div class="tags-row d-flex flex-wrap">
               <span class="feature-tag">
                 Featured Story
@@ -22,20 +30,19 @@
 
             </div>
             <div class="news-title">
-              OPTICA MAGNUS IS INTRODUCED AT IBC
+              {{ article.title | escape }}
             </div>
             <p>
               The IBC Conference is an unrivalled global destination for discussion and debate about the many different
               challenges facing the electronic media and entertainment industry, both in its sessions and in the range of
-                                                                                                  networking opportunities it affords.
+                                                                                                                                                                                                                      networking opportunities it affords.
             </p>
             <p>
               The IBC Exhibition covers fifteen halls across the RAI, hosting over 1,700 exhibitors and a number of specially
               curated feature areas and events that tie into the IBC Conference to enrich your understanding of technologies
-                                                                                                  and trends that are driving the industry.
+                                                                          and trends that are driving the industry.
             </p>
           </div>
-
         </div>
         <div class="news-list-col">
           <h3 class="common-title">
@@ -109,7 +116,7 @@
                   The IBC Conference is an unrivalled global
                   destination for discussion...
                 </p>
-                <a class="readMore-btn" href="news-details.html">
+                <a class="readMore-btn" href="{{news-details.html}}">
                   Read More
                   <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M1.83301 10.1667L10.1663 1.83334M10.1663 1.83334H1.83301M10.1663 1.83334V10.1667" stroke="#101828" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -150,3 +157,64 @@
     }
   }
 </script>
+
+
+{% schema %}
+  {
+    "name": "t:sections.main-article.name",
+    "tag": "section",
+    "class": "section",
+    "blocks": [
+      {
+        "type": "@app"
+      },
+      {
+        "type": "featured_image",
+        "name": "t:sections.main-article.blocks.featured_image.name",
+        "limit": 1,
+        "settings": []
+      },
+      {
+        "type": "title",
+        "name": "t:sections.main-article.blocks.title.name",
+        "limit": 1,
+        "settings": [
+          {
+            "type": "checkbox",
+            "id": "blog_show_date",
+            "default": true,
+            "label": "t:sections.main-article.blocks.title.settings.blog_show_date.label"
+          }, {
+            "type": "checkbox",
+            "id": "blog_show_author",
+            "default": false,
+            "label": "t:sections.main-article.blocks.title.settings.blog_show_author.label"
+          }
+        ]
+      },
+      {
+        "type": "content",
+        "name": "t:sections.main-article.blocks.content.name",
+        "limit": 1
+      }, {
+        "type": "share",
+        "name": "t:sections.main-article.blocks.share.name",
+        "limit": 2,
+        "settings": [
+          {
+            "type": "text",
+            "id": "share_label",
+            "label": "t:sections.main-article.blocks.share.settings.text.label",
+            "default": "Share"
+          }, {
+            "type": "paragraph",
+            "content": "t:sections.main-article.blocks.share.settings.featured_image_info.content"
+          }, {
+            "type": "paragraph",
+            "content": "t:sections.main-article.blocks.share.settings.title_info.content"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}
