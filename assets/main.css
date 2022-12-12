@@ -2295,6 +2295,7 @@ button.shopify-payment-button__button::after {
   overflow: hidden;
   -webkit-box-orient: vertical;
   margin-bottom: 4.8rem;
+  letter-spacing: normal;
 }
 .news-card .desc-block .readMore-btn {
   display: flex;

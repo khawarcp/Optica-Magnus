@@ -1,0 +1,44 @@
+<div class="news-card">
+  <a href="{{ article.url }}">
+    <div class="img-block">
+      <img src="{{ article.image | img_url: 'master' }}" loading="lazy" alt="{{ article.title }}" class="img-fluid">
+    </div>
+  </a>
+  <div class="desc-block">
+    {%- if show_date -%}
+      <span class="date" {%- if show_author -%} style="margin-right:10px;"{%- endif -%}>
+        {{ article.published_at | time_tag: format: 'date' }}
+      </span>
+    {%- endif -%}
+    {%- if show_author -%}
+      <span>{{ article.author }}</span>
+    {%- endif -%}
+    <h5 class="news-title">
+      {{ article.title | truncate: 50 | escape }}
+    </h5>
+    {%- if show_excerpt -%}
+      {%- if article.excerpt.size > 0 or article.content.size > 0 -%}
+        <p class="article-card__excerpt rte-width">
+          {%- if article.excerpt.size > 0 -%}
+            {{ article.excerpt | strip_html | truncatewords: 10 }}
+          {%- else -%}
+            {{ article.content | strip_html | truncatewords: 10 }}
+          {%- endif -%}
+        </p>
+      {%- endif -%}
+    {%- endif -%}
+    <div class="article-card__footer">
+      {%- if article.comments_count > 0 and blog.comments_enabled? -%}
+        <span>{{ 'blogs.article.comments' | t: count: article.comments_count }}</span>
+      {%- endif -%}
+    </div>
+    {%- if show_badge -%}
+      <div class="card__badge {{ settings.badge_position }}">
+        <span class="badge color-background-1">{{ 'blogs.article.blog' | t }}</span>
+      </div>
+    {%- endif -%}
+    <a class="readMore-btn" href="news-details.html">
+      Read More {% render 'icon-read-more' %}
+    </a>
+  </div>
+</div>
