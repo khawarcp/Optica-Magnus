@@ -1,7 +1,7 @@
 <div class="news-card">
   <a href="news-details.html">
     <div class="img-block">
-      <img src="assets/imgs/news-img-1.jpg" alt="news-img" class="img-fluid">
+      <img src="{{ article.image | img_url: 'master' }}" loading="lazy" alt="{{ article.title }}" class="img-fluid">
     </div>
   </a>
   <div class="desc-block">
@@ -9,12 +9,19 @@
       September 2019
     </span>
     <h5 class="news-title">
-      OPTICA MAGNUS IS INTRODUCED AT IBC
+      {{ article.title | truncate: 50 | escape }}
     </h5>
-    <p>
-      The IBC Conference is an unrivalled global
-      destination for discussion...
-    </p>
+    {%- if show_excerpt -%}
+      {%- if article.excerpt.size > 0 or article.content.size > 0 -%}
+        <p class="article-card__excerpt rte-width">
+          {%- if article.excerpt.size > 0 -%}
+            {{ article.excerpt | strip_html | truncatewords: 10 }}
+          {%- else -%}
+            {{ article.content | strip_html | truncatewords: 10 }}
+          {%- endif -%}
+        </p>
+      {%- endif -%}
+    {%- endif -%}
     <a class="readMore-btn" href="news-details.html">
       Read More
       <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
