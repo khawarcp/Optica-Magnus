@@ -215,10 +215,10 @@
               </a>
               <div class="desc-block">
                 <span class="date">
-                  September 2019
+                  {{ article_list.published_at | time_tag : format : 'date' }}
                 </span>
                 <h5 class="news-title">
-                  OPTICA MAGNUS IS INTRODUCED AT IBC SEPTEMBER 2019
+                  {{ article_list.title | escape }}
                 </h5>
                 <p>
                   The IBC Conference is an unrivalled global
