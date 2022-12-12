@@ -1,0 +1,10 @@
+{
+    "sections":{
+        "main": {
+            "type" : "policy-content"
+        }
+    },
+    "order":[
+        "main"
+    ]
+}
