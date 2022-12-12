@@ -2408,6 +2408,11 @@ button.shopify-payment-button__button::after {
   letter-spacing: normal;
   display: inline-block;
 }
+
+.pd-card .tags-row .feature-tag time {
+  font-family: 'Inter' !important;
+}
+
 .pd-card .news-title {
   font-size: 2.4rem;
   line-height: 2.8rem;
