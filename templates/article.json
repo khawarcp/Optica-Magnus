@@ -1,8 +1,10 @@
 {
   "sections": {
     "main": {
-      "type": "main-article-custom"
+      "type": "main-article-custom",
+      "settings": {
       }
+    }
   },
   "order": [
     "main"
