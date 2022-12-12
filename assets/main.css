@@ -2405,6 +2405,7 @@ button.shopify-payment-button__button::after {
   text-transform: capitalize;
   background-color: #FFEEEE;
   border-radius: 16px;
+  letter-spacing: normal;
   display: inline-block;
 }
 .pd-card .news-title {
