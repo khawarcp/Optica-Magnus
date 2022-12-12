@@ -28,25 +28,33 @@
             <label class="input-label" for="ContactForm-name">
               {{ 'templates.contact.form.name' | t }}
             </label>
-            <input type="text" class="ctm-input">
+            <input class="ctm-input" type="text" id="ContactForm-name" name="contact[{{ 'templates.contact.form.name' | t }}]" value="{% if form.name %}{{ form.name }}{% elsif customer %}{{ customer.name }}{% endif %}">
           </div>
-          <div class="input-style">
+          <div class="input-style field--with-error">
             <label class="input-label" for="ContactForm-email">
               {{ 'templates.contact.form.email' | t }}
             </label>
-            <input type="email" class="ctm-input">
+            <input autocomplete="email" type="email" id="ContactForm-email" class="ctm-input" name="contact[email]" spellcheck="false" autocapitalize="off" value="{% if form.email %}{{ form.email }}{% elsif customer %}{{ customer.email }}{% endif %}" aria-required="true" {% if form.errors contains 'email' %}aria-invalid="true"aria-describedby="ContactForm-email-error"{% endif %}>
+            {%- if form.errors contains 'email' -%}
+              <small class="contact__field-error" id="ContactForm-email-error">
+                <span class="visually-hidden">{{ 'accessibility.error' | t }}</span>
+                <span class="form__message">{% render 'icon-error' %}{{ form.errors.translated_fields['email'] | capitalize }} {{ form.errors.messages['email'] }}</span>
+              </small>
+            {%- endif -%}
           </div>
           <div class="input-style">
             <label class="input-label" for="ContactForm-subject_title">
               Subject
             </label>
-            <input type="text" class="ctm-input">
+            <input class="ctm-input" type="text" id="ContactForm-subject_title" name="contact[subject_title]" value="{% if form.subject_title %}{{ form.subject_title }}{% endif %}">
           </div>
           <div class="input-style">
             <label class="input-label" for="ContactForm-body">
               {{ 'templates.contact.form.comment' | t }}
             </label>
-            <textarea class="ctm-textarea"></textarea>
+            <textarea id="ContactForm-body" class="ctm-textarea" name="contact[{{ 'templates.contact.form.comment' | t }}]">
+              {{- form.body -}}
+            </textarea>
           </div>
           <div class="d-flex justify-content-end">
             <button class="primary-btn">
