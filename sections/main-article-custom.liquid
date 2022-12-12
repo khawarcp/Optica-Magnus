@@ -206,6 +206,7 @@
             Related News
           </h3>
           <div class="news-cards-list">
+            {% for article in blog.articles %}
             <div class="news-card">
               <a href="news-details.html">
                 <div class="img-block">
@@ -228,6 +229,7 @@
                 </a>
               </div>
             </div>
+            {% endfor %}
           </div>
       
         </div>
