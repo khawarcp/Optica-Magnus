@@ -1,5 +1,12 @@
 {
   "sections": {
+    "1e60bc0d-d750-461f-86c3-0d183d2f91a5": {
+      "type": "page-banner",
+      "settings": {
+        "background_image": "shopify:\/\/shop_images\/news-bg.jpg",
+        "heading": "OPTICA MAG<span>NUS<\/span>"
+      }
+    },
     "main": {
       "type": "main-blog",
       "settings": {
@@ -14,6 +21,7 @@
     }
   },
   "order": [
+    "1e60bc0d-d750-461f-86c3-0d183d2f91a5",
     "main"
   ]
 }
