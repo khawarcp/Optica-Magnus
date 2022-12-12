@@ -4,9 +4,21 @@
       "type": "page-banner",
       "settings": {
       }
+    },
+    "content": {
+      "type": "our-vision-content",
+      "settings": {
+      }
+    },
+    "form": {
+      "type": "vision-contact-from",
+      "settings": {
+      }
     }
   },
   "order": [
-    "banner"
+    "banner",
+    "content",
+    "form"
   ]
 }
