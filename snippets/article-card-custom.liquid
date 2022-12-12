@@ -1,5 +1,5 @@
 <div class="news-card">
-  <a href="news-details.html">
+  <a href="{{ article.url }}">
     <div class="img-block">
       <img src="{{ article.image | img_url: 'master' }}" loading="lazy" alt="{{ article.title }}" class="img-fluid">
     </div>
