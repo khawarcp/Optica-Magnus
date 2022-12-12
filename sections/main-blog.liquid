@@ -19,11 +19,9 @@
 {%- paginate blog.articles by 6 -%}
   <section class="news-list-sec">
     <div class="main-blog container section-{{ section.id }}-padding">
-      <h1 class="title--primary">{{ blog.title | escape }}</h1>
-
-      <div class="blog-articles {% if section.settings.layout == 'collage' %}blog-articles--collage{% endif %}">
+      <div class="d-flex news-list-row flex-wrap {% if section.settings.layout == 'collage' %}blog-articles--collage{% endif %}">
         {%- for article in blog.articles -%}
-          <div class="blog-articles__article article d-flex news-list-row flex-wrap">
+          <div class="blog-articles__article article">
             {%- render 'article-card-custom'
               , article: article
               , media_height: section.settings.image_height
