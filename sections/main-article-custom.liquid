@@ -206,6 +206,10 @@
             Related News
           </h3>
           <div class="news-cards-list">
+            {% assign min = 0 %}
+            {% assign max = blog.articles.size %}
+            {% assign diff = max | minus: min %}
+            {% assign randomNumber = "now" | date: "%N" | modulo: diff | plus: min %}
             {% for article_list in blog.articles %}
             <div class="news-card">
               <a href="news-details.html">
