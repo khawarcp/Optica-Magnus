@@ -215,15 +215,20 @@
               </a>
               <div class="desc-block">
                 <span class="date">
-                  {{ article_list.published_at | time_tag : format : 'date' }}
+                  {{ article_list.published_at | time_tag: format: 'date' }}
                 </span>
                 <h5 class="news-title">
                   {{ article_list.title | escape }}
                 </h5>
-                <p>
-                  The IBC Conference is an unrivalled global
-                  destination for discussion...
-                </p>
+                {%- if article.excerpt.size > 0 or article.content.size > 0 -%}
+                        <p class="">
+                          {%- if article.excerpt.size > 0 -%}
+                            {{ article.excerpt | strip_html | truncatewords: 10 }}
+                          {%- else -%}
+                            {{ article.content | strip_html | truncatewords: 10 }}
+                          {%- endif -%}
+                        </p>
+                      {%- endif -%}
                 <a class="readMore-btn" href="news-details.html">
                   Read More {% render 'icon-read-more' →%}
                 </a>
