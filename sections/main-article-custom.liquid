@@ -1,124 +1,348 @@
 <!-- news details section -->
 
 <section class="news-details-sec">
-  <div class="container">
-    <div class="news-dt-row">
-      <div class="news-dt-col">
-        <h3 class="common-title">
-          Recent News
-        </h3>
-        <div class="pd-card">
-          <div class="news-dt-img-block">
-            <img src="assets/imgs/news-dt-img.jpg" alt="news-dt-img" class="img-fluid">
-          </div>
-          <div class="tags-row d-flex flex-wrap">
-            <span class="feature-tag">
-              Featured Story
-            </span>
-            <span class="feature-tag">
-              September 2019
-            </span>
+  <article itemscope itemtype="http://schema.org/BlogPosting">
+    <div class="container">
+      <div class="news-dt-row">
+        <div class="news-dt-col">
+          <h3 class="common-title">
+            {{ blog.title }}
+          </h3>
+          <div class="pd-card">
+            {%- if article.image -%}
+              <div class="news-dt-img-block">
+                <img srcset="{% if article.image.width >= 350 %}{{ article.image | image_url: width: 350 }} 350w,{% endif %}
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                  {% if article.image.width >= 750 %}{{ article.image | image_url: width: 750 }} 750w,{% endif %}
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                  {% if article.image.width >= 1100 %}{{ article.image | image_url: width: 1100 }} 1100w,{% endif %}
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                  {% if article.image.width >= 1500 %}{{ article.image | image_url: width: 1500 }} 1500w,{% endif %}
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                  {% if article.image.width >= 2200 %}{{ article.image | image_url: width: 2200 }} 2200w,{% endif %}
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                  {% if article.image.width >= 3000 %}{{ article.image | image_url: width: 3000 }} 3000w,{% endif %}
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                  {{ article.image | image_url }} {{ article.image.width }}w" sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 }}px, (min-width: 750px) calc(100vw - 10rem), 100vw" src="{{ article.image | image_url: width: 1100 }}" loading="eager" width="{{ article.image.width }}" height="{{ article.image.height }}" alt="{{ article.image.alt | escape }}">
+              </div>
+            {%- endif -%}
+            <div class="tags-row d-flex flex-wrap">
+              {%- if section.settings.show_tags -%}
+                {%- for tag in article.tags-%}
+                  <span class="feature-tag">
+                    {{ tag }}
+                  </span>
+                {%- endfor -%}
+              {%- endif -%}
+              {%- if section.settings.blog_show_date -%}
+                <span class="feature-tag">
+                  {{ article.published_at | time_tag: format: 'date' }}
+                </span>
+              {%- endif -%}
+              {%- if section.settings.blog_show_author -%}
+                <span class="feature-tag" itemprop="author" itemscope itemtype="http://schema.org/Person">
+                  <span itemprop="name">{{ article.author }}</span>
+                </span>
+              {%- endif -%}
+
+            </div>
+            <div class="news-title">
+              {{ article.title | escape }}
+            </div>
+
+            {{ article.content }}
 
           </div>
-          <div class="news-title">
-            OPTICA MAGNUS IS INTRODUCED AT IBC
-          </div>
-          <p>
-            The IBC Conference is an unrivalled global destination for discussion and debate about the many different
-            challenges facing the electronic media and entertainment industry, both in its sessions and in the range of
-                                            networking opportunities it affords.
-          </p>
-          <p>
-            The IBC Exhibition covers fifteen halls across the RAI, hosting over 1,700 exhibitors and a number of specially
-            curated feature areas and events that tie into the IBC Conference to enrich your understanding of technologies
-                                            and trends that are driving the industry.
-          </p>
+          {%- if section.settings.show_share -%}
+            <div class="article-template__social-sharing container">
+              <share-button class="share-button">
+                <button class="share-button__button hidden">
+                  {% render 'icon-share' %}
+                  Share
+                </button>
+                <details id="Details-{{ section.id }}-{{ section.id }}">
+                  <summary class="share-button__button">
+                    {% render 'icon-share' %}
+                    Share
+                  </summary>
+                  <div id="Article-share-{{ section.id }}" class="share-button__fallback motion-reduce">
+                    <div class="field">
+                      <span id="ShareMessage-{{ section.id }}" class="share-button__message hidden" role="status"></span>
+                      <input type="text" class="field__input" id="url" value="{{ request.origin | append: article.url }}" placeholder="{{ 'general.share.share_url' | t }}" onclick="this.select();" readonly>
+                      <label class="field__label" for="url">{{ 'general.share.share_url' | t }}</label>
+                    </div>
+                    <button class="share-button__close hidden no-js-hidden">
+                      {% render 'icon-close' %}
+                      <span class="visually-hidden">{{ 'general.share.close' | t }}</span>
+                    </button>
+                    <button class="share-button__copy no-js-hidden">
+                      {% render 'icon-clipboard' %}
+                      <span class="visually-hidden">{{ 'general.share.copy_to_clipboard' | t }}</span>
+                    </button>
+                  </div>
+                </details>
+              </share-button>
+              <script src="{{ 'share.js' | asset_url }}" defer="defer"></script>
+            </div>
+          {%- endif -%}
+          {%- if blog.comments_enabled? -%}
+            <div class="article-template__comment-wrapper background-secondary">
+              <div id="comments" class="page-width page-width--narrow">
+                {%- if article.comments_count > 0 -%}
+                  {%- assign anchorId = '#Comments-' | append: article.id -%}
+
+                  <h2 id="Comments-{{ article.id }}" tabindex="-1">{{ 'blogs.article.comments' | t: count: article.comments_count }}</h2>
+                  {% paginate article.comments by 5 %}
+                    <div class="article-template__comments">
+                      {%- if comment.status == 'pending' and comment.content -%}
+                        <article id="{{ comment.id }}" class="article-template__comments-comment">
+                          {{ comment.content }}
+                          <footer class="right">
+                            <span class="circle-divider caption-with-letter-spacing">{{ comment.author }}</span>
+                          </footer>
+                        </article>
+                      {%- endif -%}
+
+                      {%- for comment in article.comments -%}
+                        <article id="{{ comment.id }}" class="article-template__comments-comment">
+                          {{ comment.content }}
+                          <footer class="right">
+                            <span class="circle-divider caption-with-letter-spacing">{{ comment.author }}</span>
+                            <span class="caption-with-letter-spacing">{{ comment.created_at | time_tag: format: 'date' }}</span>
+                          </footer>
+                        </article>
+                      {%- endfor -%}
+                      {% render 'pagination', paginate: paginate, anchor: anchorId %}
+                    </div>
+                  {% endpaginate %}
+                {%- endif -%}
+                {% form 'new_comment', article %}
+                  {%- liquid
+            assign post_message = 'blogs.article.success'
+            if blog.moderated? and comment.status == 'unapproved'
+              assign post_message = 'blogs.article.success_moderated'
+            endif
+          -%}
+                  <h2>{{ 'blogs.article.comment_form_title' | t }}</h2>
+                  {%- if form.errors -%}
+                    <div class="form__message" role="alert">
+                      <h3 class="form-status caption-large text-body" tabindex="-1" autofocus>
+                        {% render 'icon-error' %} {{ 'templates.contact.form.error_heading' | t }}
+                      </h3>
+                    </div>
+                    <ul class="form-status-list caption-large">
+                      {%- for field in form.errors -%}
+                        <li>
+                          <a href="#CommentForm-{{ field }}" class="link">
+                            {%- if form.errors.translated_fields[field] contains 'author' -%}
+                              {{ 'blogs.article.name' | t }}
+                            {%- elsif form.errors.translated_fields[field] contains 'body'-%}
+                              {{ 'blogs.article.message' | t }}
+                            {%- else -%}
+                              {{ form.errors.translated_fields[field] }}
+                            {%- endif -%}
+                            {{ form.errors.messages[field] }}
+                          </a>
+                        </li>
+                      {%- endfor -%}
+                    </ul>
+                  {%- elsif form.posted_successfully? -%}
+                    <div class="form-status-list form__message" role="status">
+                      <h3 class="form-status" tabindex="-1" autofocus>{% render 'icon-success' %} {{ post_message | t }}</h3>
+                    </div>
+                  {%- endif -%}
+
+                  <div {% if blog.moderated? == false %}class="article-template__comments-fields"{% endif %}>
+                    <div class="article-template__comment-fields">
+                      <div class="field field--with-error">
+                        <input type="text" name="comment[author]" id="CommentForm-author" class="field__input" autocomplete="name" value="{{ form.author }}" aria-required="true" required
+                          {% if form.errors contains 'author' %}
+                          aria-invalid="true"aria-describedby="CommentForm-author-error"{% endif %}
+                          placeholder="{{ 'blogs.article.name' | t }}">
+                        <label class="field__label" for="CommentForm-author">{{ 'blogs.article.name' | t }}
+                          <span aria-hidden="true">*</span>
+                        </label>
+                        {%- if form.errors contains 'author' -%}
+                          <small id="CommentForm-author-error">
+                            <span class="form__message">{% render 'icon-error' %}{{ 'blogs.article.name' | t }} {{ form.errors.messages['author'] }}.</span>
+                          </small>
+                        {%- endif -%}
+                      </div>
+                      <div class="field field--with-error">
+                        <input type="email" name="comment[email]" id="CommentForm-email" autocomplete="email" class="field__input" value="{{ form.email }}" autocorrect="off" autocapitalize="off" aria-required="true" required
+                          {% if form.errors contains 'email' %}
+                          aria-invalid="true"aria-describedby="CommentForm-email-error"{% endif %}
+                          placeholder="{{ 'blogs.article.email' | t }}">
+                        <label class="field__label" for="CommentForm-email">{{ 'blogs.article.email' | t }}
+                          <span aria-hidden="true">*</span>
+                        </label>
+                        {%- if form.errors contains 'email' -%}
+                          <small id="CommentForm-email-error">
+                            <span class="form__message">{% render 'icon-error' %}{{ 'blogs.article.email' | t }} {{ form.errors.messages['email'] }}.</span>
+                          </small>
+                        {%- endif -%}
+                      </div>
+                    </div>
+                    <div class="field field--with-error">
+                      <textarea rows="5" name="comment[body]" id="CommentForm-body" class="text-area field__input" aria-required="true" required
+                        {% if form.errors contains 'body' %}
+                        aria-invalid="true"aria-describedby="CommentForm-body-error"{% endif %}
+                        placeholder="{{ 'blogs.article.message' | t }}">{{ form.body }}</textarea>
+                      <label class="form__label field__label" for="CommentForm-body">{{ 'blogs.article.message' | t }}
+                        <span aria-hidden="true">*</span>
+                      </label>
+                    </div>
+                    {%- if form.errors contains 'body' -%}
+                      <small id="CommentForm-body-error">
+                        <span class="form__message">{% render 'icon-error' %}{{ 'blogs.article.message' | t }} {{ form.errors.messages['body'] }}.</span>
+                      </small>
+                    {%- endif -%}
+                  </div>
+                  {%- if blog.moderated? -%}
+                    <p class="article-template__comment-warning caption">{{ 'blogs.article.moderated' | t }}</p>
+                  {%- endif -%}
+                  <input type="submit" class="button" value="{{ 'blogs.article.post' | t }}">
+                {% endform %}
+              </div>
+            </div>
+          {%- endif -%}
         </div>
+        <div class="news-list-col">
+          <h3 class="common-title">
+            Related News
+          </h3>
+          <div class="news-cards-list">
+            <div class="news-card">
+              <a href="news-details.html">
+                <div class="img-block">
+                  <img src="assets/imgs/news-img-3.jpg" alt="news-img" class="img-fluid">
+                </div>
+              </a>
+              <div class="desc-block">
+                <span class="date">
+                  September 2019
+                </span>
+                <h5 class="news-title">
+                  OPTICA MAGNUS IS INTRODUCED AT IBC SEPTEMBER 2019
+                </h5>
+                <p>
+                  The IBC Conference is an unrivalled global
+                  destination for discussion...
+                </p>
+                <a class="readMore-btn" href="news-details.html">
+                  Read More
+                  <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1.83301 10.1667L10.1663 1.83334M10.1663 1.83334H1.83301M10.1663 1.83334V10.1667" stroke="#101828" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="news-card">
+              <a href="news-details.html">
+                <div class="img-block">
+                  <img src="assets/imgs/news-img-2.jpg" alt="news-img" class="img-fluid">
+                </div>
+              </a>
+              <div class="desc-block">
+                <span class="date">
+                  September 2019
+                </span>
+                <h5 class="news-title">
+                  SUPER 35 TO LARGE FORMAT EXPANDER
+                </h5>
+                <p>
+                  The IBC Conference is an unrivalled global
+                  destination for discussion...
+                </p>
+                <a class="readMore-btn" href="news-details.html">
+                  Read More
+                  <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1.83301 10.1667L10.1663 1.83334M10.1663 1.83334H1.83301M10.1663 1.83334V10.1667" stroke="#101828" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="news-card">
+              <a href="news-details.html">
+                <div class="img-block">
+                  <img src="assets/imgs/news-img-4.jpg" alt="news-img" class="img-fluid">
+                </div>
+              </a>
+              <div class="desc-block">
+                <span class="date">
+                  September 2019
+                </span>
+                <h5 class="news-title">
+                  OPTICA MAGNUS IS REPRESENTED BY P+S TECHNIK FOR EUROPE
+                </h5>
+                <p>
+                  The IBC Conference is an unrivalled global
+                  destination for discussion...
+                </p>
+                <a class="readMore-btn" href="{{news-details.html}}">
+                  Read More
+                  <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1.83301 10.1667L10.1663 1.83334M10.1663 1.83334H1.83301M10.1663 1.83334V10.1667" stroke="#101828" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
 
-      </div>
-      <div class="news-list-col">
-        <h3 class="common-title">
-          Related News
-        </h3>
-        <div class="news-cards-list">
-          <div class="news-card">
-            <a href="news-details.html">
-              <div class="img-block">
-                <img src="assets/imgs/news-img-3.jpg" alt="news-img" class="img-fluid">
-              </div>
-            </a>
-            <div class="desc-block">
-              <span class="date">
-                September 2019
-              </span>
-              <h5 class="news-title">
-                OPTICA MAGNUS IS INTRODUCED AT IBC SEPTEMBER 2019
-              </h5>
-              <p>
-                The IBC Conference is an unrivalled global
-                destination for discussion...
-              </p>
-              <a class="readMore-btn" href="news-details.html">
-                Read More
-                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M1.83301 10.1667L10.1663 1.83334M10.1663 1.83334H1.83301M10.1663 1.83334V10.1667" stroke="#101828" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-              </a>
-            </div>
-          </div>
-          <div class="news-card">
-            <a href="news-details.html">
-              <div class="img-block">
-                <img src="assets/imgs/news-img-2.jpg" alt="news-img" class="img-fluid">
-              </div>
-            </a>
-            <div class="desc-block">
-              <span class="date">
-                September 2019
-              </span>
-              <h5 class="news-title">
-                SUPER 35 TO LARGE FORMAT EXPANDER
-              </h5>
-              <p>
-                The IBC Conference is an unrivalled global
-                destination for discussion...
-              </p>
-              <a class="readMore-btn" href="news-details.html">
-                Read More
-                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M1.83301 10.1667L10.1663 1.83334M10.1663 1.83334H1.83301M10.1663 1.83334V10.1667" stroke="#101828" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-              </a>
-            </div>
-          </div>
-          <div class="news-card">
-            <a href="news-details.html">
-              <div class="img-block">
-                <img src="assets/imgs/news-img-4.jpg" alt="news-img" class="img-fluid">
-              </div>
-            </a>
-            <div class="desc-block">
-              <span class="date">
-                September 2019
-              </span>
-              <h5 class="news-title">
-                OPTICA MAGNUS IS REPRESENTED BY P+S TECHNIK FOR EUROPE
-              </h5>
-              <p>
-                The IBC Conference is an unrivalled global
-                destination for discussion...
-              </p>
-              <a class="readMore-btn" href="news-details.html">
-                Read More
-                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M1.83301 10.1667L10.1663 1.83334M10.1663 1.83334H1.83301M10.1663 1.83334V10.1667" stroke="#101828" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-              </a>
-            </div>
-          </div>
         </div>
-
       </div>
     </div>
-  </div>
+  </article>
 </section>
+
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "Article",
+    "articleBody": {{ article.content | strip_html | json }},
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": {{ request.origin | append: page.url | json }}
+    },
+    "headline": {{ article.title | json }},{% if article.excerpt != blank %}"description" : {{ article.excerpt | strip_html | json }},{% endif %}{% if article.image %}"image" : [{{ article | image_url: width: article.image.width | prepend: "https:" | json }}],{% endif %}"datePublished": {{ article.published_at | date: '%Y-%m-%dT%H:%M:%SZ' | json }},
+    "dateCreated": {{ article.created_at | date: '%Y-%m-%dT%H:%M:%SZ' | json }},
+    "author": {
+      "@type": "Person",
+      "name": {{ article.author | json }}
+    },
+    "publisher": {
+      "@type": "Organization",{% if settings.share_image %}"logo" : {
+          "@type": "ImageObject",
+          "height": {{ settings.share_image.height | json }},
+          "url": {{ settings.share_image | image_url: width: settings.share_image.width | prepend: "https:" | json }},
+          "width": {{ settings.share_image.width | json }}
+        },{% endif %}"name": {{ shop.name | json }}
+    }
+  }
+</script>
+
+
+{% schema %}
+  {
+    "name": "t:sections.main-article.name",
+    "tag": "section",
+    "class": "section",
+    "settings": [
+      {
+        "type": "checkbox",
+        "id": "blog_show_date",
+        "default": true,
+        "label": "t:sections.main-article.blocks.title.settings.blog_show_date.label"
+      }, {
+        "type": "checkbox",
+        "id": "blog_show_author",
+        "default": false,
+        "label": "t:sections.main-article.blocks.title.settings.blog_show_author.label"
+      }, {
+        "type": "checkbox",
+        "id": "show_share",
+        "default": false,
+        "label": "Show Share Button"
+      }, {
+        "type": "checkbox",
+        "id": "show_tags",
+        "default": true,
+        "label": "Show Tags"
+      }
+    ]
+  }
+{% endschema %}
