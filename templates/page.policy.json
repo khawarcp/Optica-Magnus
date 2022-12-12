@@ -1,5 +1,11 @@
 {
   "sections": {
+    "2b17bdbe-d6da-4b40-b3b2-0e9051c56917": {
+      "type": "page-banner",
+      "settings": {
+        "heading": ""
+      }
+    },
     "main": {
       "type": "policy-content",
       "settings": {
@@ -7,6 +13,7 @@
     }
   },
   "order": [
+    "2b17bdbe-d6da-4b40-b3b2-0e9051c56917",
     "main"
   ]
 }
