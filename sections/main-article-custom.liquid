@@ -212,7 +212,7 @@
             {% assign randomNumber = "now" | date: "%N" | modulo: diff | plus: min %}
             {% for article_list in blog.articles %}
             <div class="news-card">
-              <a href="news-details.html">
+              <a href="{{ article_list.url }}">
                 <div class="img-block">
                   <img src="{{ article_list.image | img_url : "master" }}" loading="lazy" alt="{{ article_list.title | escape }}" class="img-fluid">
                 </div>
