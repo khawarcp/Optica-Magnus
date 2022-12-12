@@ -208,9 +208,8 @@
           <div class="news-cards-list">  
             {% assign count = 3 %}
             {% for article_list in blog.articles limit : count %}
-              {% if article.title == article_list.title %}
+              {% if article.title == article_list.title %}                 {% assign count = count | plus : 1 %}
                 {% continue %}
-                {% assign count = count | plus : 1 %}
                {% else %} 
             <div class="news-card">
               <a href="{{ article_list.url }}">
@@ -239,7 +238,8 @@
                 </a>
               </div>
             </div>
-            {% endif %}              
+            {% endif %}
+              {% if article.title == article_list.title %} {% assign count = count | plus : 1 %} {% endif %}
             {% endfor %}
           </div>
       
