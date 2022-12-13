@@ -2527,6 +2527,6 @@ cart-remove-button .icon-remove {
     .product__media-list .product__media-item {
     
     width: 100% !important;
-    margin-left:0 !important;
+    margin:0 !important;
 }
 }
