@@ -1537,7 +1537,7 @@ button.shopify-payment-button__button::after {
   height: 34.9rem;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: right;
   display: flex;
   justify-content: center;
   align-items: center;
