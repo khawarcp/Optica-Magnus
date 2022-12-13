@@ -1536,8 +1536,8 @@ button.shopify-payment-button__button::after {
 .products-banner .banner-content {
   height: 34.9rem;
   background-repeat: no-repeat;
-  background-size: contain;
-  background-position: right;
+  background-size: cover;
+  background-position: center right;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -2530,4 +2530,10 @@ cart-remove-button .icon-remove {
     width: 100% !important;
     margin:0 !important;
 }
+}
+
+@media screen and (min-width: 1441px) {
+  .products-banner .banner-content {
+    background-size:contain;
+  }
 }
