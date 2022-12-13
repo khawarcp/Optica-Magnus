@@ -1536,11 +1536,12 @@ button.shopify-payment-button__button::after {
 .products-banner .banner-content {
   height: 34.9rem;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   background-position: right;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color:#010101;
 }
 @media (max-width: 767px) {
   .products-banner .banner-content {
