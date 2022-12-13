@@ -2539,5 +2539,9 @@ cart-remove-button .icon-remove {
 }
 
 .description_text ul {
-  list-style-type:bullets;
+  list-style-type:disc;
+  padding-left: 2rem;
+}
+.description_text > p {
+  margin-bottom:15px;
 }
