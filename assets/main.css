@@ -2522,3 +2522,10 @@ cart-remove-button .icon-remove {
 .cart__checkout-button {
   margin-left:auto !important;
 }
+
+@media screen and (max-width: 749px) {
+    .product__media-list .product__media-item {
+    
+    width: 100% !important;
+}
+}
