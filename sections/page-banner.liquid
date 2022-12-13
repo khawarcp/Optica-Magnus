@@ -1,7 +1,7 @@
 <section class="products-banner">
   {% if template contains 'collection'  %}
     {% if collection.image != blank %}
-    <div class="banner-content" loading="lazy" style="background-color:red background-image: url('{{ collection.image | img_url: 'master' }}');">
+    <div class="banner-content" loading="lazy" style="background-color:red; background-image: url('{{ collection.image | img_url: 'master' }}');">
      {% else %}
     <div class="banner-content" loading="lazy" style="background-image: url('{{ section.settings.background_image | img_url: 'master' }}');">    
     {% endif %}
