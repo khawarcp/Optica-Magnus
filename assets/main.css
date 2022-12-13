@@ -2537,3 +2537,7 @@ cart-remove-button .icon-remove {
     background-size:contain;
   }
 }
+
+.description_text ul {
+  list-style-type:bullets;
+}
