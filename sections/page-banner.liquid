@@ -8,7 +8,7 @@
   {% else %}         
     <div class="banner-content" loading="lazy"
     {% if template.suffix contains 'policy' and section.settings.background_image != blank %} style="background-image: url('{{ section.settings.background_image | img_url: 'master' }}');"
-      {% elsif template contains 'blog' and section.settings.background_image != blank %}  style="background-image: url('{{ section.settings.background_image | img_url: 'master' }}');"
+      {% elsif template contains 'blog' and section.settings.background_image != blank %}  style="background-color:#04090c; background-image: url('{{ section.settings.background_image | img_url: 'master' }}');"
       {% elsif template contains 'page' and section.settings.background_image != blank %}  style="background-image: url('{{ section.settings.background_image | img_url: 'master' }}');"
       {% else %} style="background-color: #0A1823;" {% endif %}>
     {% endif %}
