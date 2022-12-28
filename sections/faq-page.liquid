@@ -65,6 +65,8 @@
             <div class="row">
                 <div class="col-md-6">
                     <div class="faqs-wrap">
+                      {% for block in section.blocks %}
+                             {% if block.type == 'faqleft' %}
                         <div class="accordion" id="accordionExample">
                             <div class="accordion-item">
                                 <h2 class="accordion-header" id="heading111">
@@ -149,11 +151,13 @@
                                 </div>
                             </div>
                         </div>
+                          {% endif %}
+                        {% endfor %}
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="faqs-wrap">
-                        <div class="accordion" id="accordionExample">
+<!--                         <div class="accordion" id="accordionExample"> -->
                             <div class="accordion-item active">
                                 <h2 class="accordion-header" id="heading111">
                                     <button class="accordion-button" type="button" data-bs-toggle="collapse"
