@@ -158,8 +158,20 @@ if (quantityBlock != null) {
     priceElment.innerText = '$' + total.toFixed(2);
   });
 }
-
-
+// faq page
+$('.accordion-item').click( function(){
+        if($(this).hasClass('active')){
+            $('.accordion-item').removeClass('active');
+        }
+        else{
+            $('.accordion-item').removeClass('active');
+            $(this).addClass('active');
+        }
+    });
+    $(document).ready(function(){
+        $('.accordion-collapse.collapse').removeClass('show');
+        
+    });
 
 // AOS js
 AOS.init({
