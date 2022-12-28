@@ -74,18 +74,13 @@
                                     <button class="accordion-button" type="button" data-bs-toggle="collapse"
                                         data-bs-target="#coll-{{ forloop.index }}" aria-expanded="true"
                                         aria-controls="coll-{{ forloop.index }}">
-                                        How long will it take to rehouse my lens?
+                                        {{ block.settings.heading }}
                                     </button>
                                 </h2>
                                 <div id="coll-{{ forloop.index }}" class="accordion-collapse collapse {% if forloop.first %}show{% endif %}"
                                     aria-labelledby="heading{{ forloop.index }}" data-bs-parent="#accordionExample">
                                     <div class="accordion-body">
-                                        Whether you already own the base lenses or are planning to assemble a set
-                                        from scratch, you can send us a message to get a precise quote for the
-                                        specific focal lengths you have in mind. We require full payment before
-                                        rehousing begins, but a 25% non-refundable deposit will hold your place in
-                                        line and we will contact you for the remaining balance when your set comes
-                                        up in the queue.
+                                       {{ block.settings.description}}
                                     </div>
                                 </div>
                             </div>
