@@ -7,7 +7,7 @@
                            {% for block in section.blocks %}
                              {% if block.type == 'faqleft' %}
                             <div class="accordion-item">
-                                <h2 class="accordion-header" id="heading111">
+                                <h2 class="accordion-header" id="{{ block.id }}">
                                     <button class="accordion-button" type="button" data-bs-toggle="collapse"
                                         data-bs-target="#collapse111" aria-expanded="true"
                                         aria-controls="collapse111">
@@ -15,7 +15,7 @@
                                     </button>
                                 </h2>
                                 <div id="collapse111" class="accordion-collapse collapse show"
-                                    aria-labelledby="heading111" data-bs-parent="#accordionExample">
+                                    aria-labelledby="{{ block.id }}" data-bs-parent="#accordionExample">
                                     <div class="accordion-body">
                                         {{ block.settings.description }}
                                     </div>
@@ -32,7 +32,7 @@
                           {% for block in section.blocks %}
                              {% if block.type == 'faqright' %}
                             <div class="accordion-item active">
-                                <h2 class="accordion-header" id="heading111">
+                                <h2 class="accordion-header" id="{{ block.id }}">
                                     <button class="accordion-button" type="button" data-bs-toggle="collapse"
                                         data-bs-target="#collapse111" aria-expanded="true"
                                         aria-controls="collapse111">
@@ -40,7 +40,7 @@
                                     </button>
                                 </h2>
                                 <div id="collapse111" class="accordion-collapse collapse"
-                                    aria-labelledby="heading111" data-bs-parent="#accordionExample">
+                                    aria-labelledby="{{ block.id }}" data-bs-parent="#accordionExample">
                                     <div class="accordion-body">
                                         {{ block.settings.description }}
                                     </div>
