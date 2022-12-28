@@ -1,5 +1,11 @@
 {
   "sections": {
+    "b16d33a4-1c53-40cb-97bc-de47e8f9fe37": {
+      "type": "page-banner",
+      "settings": {
+        "heading": "Frequently asked questions"
+      }
+    },
     "main": {
       "type": "faq-page",
       "settings": {
@@ -7,6 +13,7 @@
     }
   },
   "order": [
+    "b16d33a4-1c53-40cb-97bc-de47e8f9fe37",
     "main"
   ]
 }
