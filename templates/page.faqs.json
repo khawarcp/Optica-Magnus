@@ -23,6 +23,13 @@
             "description": "<p>Whether you already own the base lenses or are planning to assemble a set from scratch, you can send us a message to get a precise quote for the specific focal lengths you have in mind. We require full payment before rehousing begins, but a 25% non-refundable deposit will hold your place in line and we will contact you for the remaining balance when your set comes up in the queue<\/p>"
           }
         },
+        "0e5d664f-1ae3-4bf2-aac2-519b24c97aab": {
+          "type": "faqleft",
+          "settings": {
+            "heading": "Do you sell finished sets or source lenses for clients?",
+            "description": "<p>Whether you already own the base lenses or are planning to assemble a set from scratch, you can send us a message to get a precise quote for the specific focal lengths you have in mind. We require full payment before rehousing begins, but a 25% non-refundable deposit will hold your place in line and we will contact you for the remaining balance when your set comes up in the queue<\/p>"
+          }
+        },
         "a7bef274-0979-4f9e-a1e2-e3f96783054e": {
           "type": "faqright",
           "settings": {
@@ -36,13 +43,22 @@
             "heading": "Do you sell finished sets or source lenses for clients?",
             "description": "<p>Whether you already own the base lenses or are planning to assemble a set from scratch, you can send us a message to get a precise quote for the specific focal lengths you have in mind. We require full payment before rehousing begins, but a 25% non-refundable deposit will hold your place in line and we will contact you for the remaining balance when your set comes up in the queue<\/p>"
           }
+        },
+        "46899be6-1b2b-4456-b8a6-19f9bce038f4": {
+          "type": "faqright",
+          "settings": {
+            "heading": "What is the process for placing an order?",
+            "description": "<p>Whether you already own the base lenses or are planning to assemble a set from scratch, you can send us a message to get a precise quote for the specific focal lengths you have in mind. We require full payment before rehousing begins, but a 25% non-refundable deposit will hold your place in line and we will contact you for the remaining balance when your set comes up in the queue<\/p>"
+          }
         }
       },
       "block_order": [
         "bf874d50-223c-4dc1-88d7-e54b6d2a86d6",
         "b8dba806-05dc-4b6d-a3ac-074671dbefc0",
+        "0e5d664f-1ae3-4bf2-aac2-519b24c97aab",
         "a7bef274-0979-4f9e-a1e2-e3f96783054e",
-        "c7605b97-949f-4812-80b0-11de6bf81eba"
+        "c7605b97-949f-4812-80b0-11de6bf81eba",
+        "46899be6-1b2b-4456-b8a6-19f9bce038f4"
       ],
       "settings": {
       }
