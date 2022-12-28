@@ -158,6 +158,7 @@ if (quantityBlock != null) {
     priceElment.innerText = '$' + total.toFixed(2);
   });
 }
+
 // faq page
 $('.accordion-item').click( function(){
         if($(this).hasClass('active')){
