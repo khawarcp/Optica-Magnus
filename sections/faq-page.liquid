@@ -77,7 +77,7 @@
                                         {{ block.settings.heading }}
                                     </button>
                                 </h2>
-                                <div id="coll-{{ forloop.index }}" class="accordion-collapse collapse show"
+                                <div id="coll-{{ forloop.index }}" class="accordion-collapse collapse {% if forloop.first %}show{% endif %}"
                                     aria-labelledby="heading{{ forloop.index }}" data-bs-parent="#accordionExample">
                                     <div class="accordion-body">
                                        {{ block.settings.description}}
