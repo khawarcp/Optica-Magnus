@@ -184,7 +184,25 @@
 {% schema %}
   {
     "name": "Faq Page",
-    "settings": []
+    "settings": [],
+    "blocks":[
+      {
+        "type": "faq",
+        "name": "faqs",
+        "settings":[
+          {
+            "type": "text",
+            "id": "heading",
+            "label": "Heading"
+          },
+          {
+            "type": "richtext",
+            "id": "description",
+            "label": "Description"
+          }
+        ]
+      }
+    ]
   }
 {% endschema %}
 
