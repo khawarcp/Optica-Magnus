@@ -734,8 +734,8 @@ button.shopify-payment-button__button::after {
 
 /**********  faqs page ***********/
 .faqs-sec{
-       padding-top: 30px;
-       padding-bottom: 30px;
+       padding-top: 40px;
+       padding-bottom: 40px;
     }
 .faqs-sec div#v-pills-tabContent {
   width: 75%;
