@@ -40,7 +40,7 @@
       "settings": {
         "enable_sticky_info": true,
         "media_position": "left",
-        "gallery_layout": "thumbnail",
+        "gallery_layout": "thumbnail_slider",
         "media_size": "medium",
         "mobile_thumbnails": "hide",
         "hide_variants": true,
