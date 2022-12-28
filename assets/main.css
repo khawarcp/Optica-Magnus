@@ -733,6 +733,10 @@ button.shopify-payment-button__button::after {
 }
 
 /**********  faqs page ***********/
+.faqs-sec{
+       padding-top: 30px;
+       padding-bottom: 30px;
+    }
 .faqs-sec div#v-pills-tabContent {
   width: 75%;
 }
