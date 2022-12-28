@@ -72,12 +72,12 @@
                             <div class="accordion-item">
                                 <h2 class="accordion-header" id="heading{{ forloop.index }}">
                                     <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#{{ block.id }}" aria-expanded="true"
-                                        aria-controls="{{ block.id }}">
+                                        data-bs-target="#coll-{{ forloop.index }}" aria-expanded="true"
+                                        aria-controls="coll-{{ forloop.index }}">
                                         How long will it take to rehouse my lens?
                                     </button>
                                 </h2>
-                                <div id="{{ block.id }}" class="accordion-collapse collapse {% if forloop.first %}show{% endif %}"
+                                <div id="coll-{{ forloop.index }}" class="accordion-collapse collapse {% if forloop.first %}show{% endif %}"
                                     aria-labelledby="heading{{ forloop.index }}" data-bs-parent="#accordionExample">
                                     <div class="accordion-body">
                                         Whether you already own the base lenses or are planning to assemble a set
