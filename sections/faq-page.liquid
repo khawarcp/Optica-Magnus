@@ -3,19 +3,19 @@
             <div class="row">
                 <div class="col-md-6">
                     <div class="faqs-wrap">
-                        <div class="accordion" id="{{ block.id }}">
+                        <div class="accordion" id="accordionExample">
                            {% for block in section.blocks %}
                              {% if block.type == 'faqleft' %}
                             <div class="accordion-item">
-                                <h2 class="accordion-header" id="{{ block.id }}">
+                                <h2 class="accordion-header" id="heading111">
                                     <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#{{ block.id }}" aria-expanded="true"
-                                        aria-controls="{{ block.id }}">
+                                        data-bs-target="#collapse111" aria-expanded="true"
+                                        aria-controls="collapse111">
                                         {{ block.settings.heading }}
                                     </button>
                                 </h2>
-                                <div id="{{ block.id }}" class="accordion-collapse collapse show"
-                                    aria-labelledby="{{ block.id }}" data-bs-parent="#{{ block.id }}">
+                                <div id="collapse111" class="accordion-collapse collapse show"
+                                    aria-labelledby="heading111" data-bs-parent="#accordionExample">
                                     <div class="accordion-body">
                                         {{ block.settings.description }}
                                     </div>
@@ -28,19 +28,19 @@
                 </div>
                 <div class="col-md-6">
                     <div class="faqs-wrap">
-                        <div class="accordion" id="{{ block.id }}">
+                        <div class="accordion" id="accordionExample">
                           {% for block in section.blocks %}
                              {% if block.type == 'faqright' %}
                             <div class="accordion-item active">
-                                <h2 class="accordion-header" id="{{ block.id }}">
+                                <h2 class="accordion-header" id="heading111">
                                     <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#{{ block.id }}" aria-expanded="true"
-                                        aria-controls="{{ block.id }}">
+                                        data-bs-target="#collapse111" aria-expanded="true"
+                                        aria-controls="collapse111">
                                         {{ block.settings.heading }}
                                     </button>
                                 </h2>
-                                <div id="{{ block.id }}" class="accordion-collapse collapse"
-                                    aria-labelledby="{{ block.id }}" data-bs-parent="#{{ block.id }}">
+                                <div id="collapse111" class="accordion-collapse collapse"
+                                    aria-labelledby="heading111" data-bs-parent="#accordionExample">
                                     <div class="accordion-body">
                                         {{ block.settings.description }}
                                     </div>
