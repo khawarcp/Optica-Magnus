@@ -730,6 +730,96 @@ button.shopify-payment-button__button::after {
   margin: 20px 0px;
 }
 
+/**********  faqs page ***********/
+.faqs-sec div#v-pills-tabContent {
+  width: 75%;
+}
+
+.faqs-sec div#v-pills-tab {
+  width: 25%;
+}
+.faqs-sec .nav-pills .nav-link.active {
+  background: #000000;
+  box-shadow: inset 0px -1px 0px rgba(0, 0, 0, 0.12);
+  border-radius: 0px;
+  color: #fff;
+
+}
+.faqs-sec .nav-pills .nav-link::before {
+  content: "";
+  position: absolute;
+  border: 1px solid #000;
+  border-width: 0 1px 1px 0;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  right: 17px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  width: 7px;
+  height: 7px;
+}
+.faqs-sec .nav-pills .nav-link.active::before  {
+  border: 1px solid #fff;
+  border-width: 0 1px 1px 0;
+}
+.faqs-sec .nav-pills .nav-link {
+  text-align: left;
+  position: relative;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 23px;
+  color: #000000;
+  padding: 16px 24px;
+}
+.accordion-item {
+  border: none;
+}
+.faqs-wrap {
+  border-bottom: 1px solid #DDE1E4;
+  border-top: 1px solid #DDE1E4;
+}
+.faqs-wrap  .accordion-item.active {
+  border-left: 1px solid;
+  border-bottom: 1px solid #DDE1E4;
+  border-radius: 0;
+}
+.faqs-wrap  .accordion-button:focus {
+  box-shadow: none;
+}
+.faqs-wrap  .accordion-item .accordion-button {
+  background-color: transparent;
+}
+.faqs-wrap .accordion-button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+  color: #000000;
+}
+.faqs-wrap .accordion-body {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 29px;
+  color: rgb(0 0 0 / 95%);
+}
+.faqs-wrap  .accordion-item {
+  border-bottom: 1px solid #DDE1E4;
+
+}
+.faqs-wrap .accordion-button::after {
+  width: 30px;
+  height: 30px;
+  background-size: 12px;
+  background-color: #F5F5F8;
+  border-radius: 50%;
+  background-position: center;
+}
+.faqs-wrap .accordion-item:last-child {
+  border-bottom: none;
+}
+
 @media only screen and (min-width: 1600px) {
   .drawer__inner {
     padding: 0 35px 0 20px !important;
