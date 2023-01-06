@@ -1373,6 +1373,10 @@ button.shopify-payment-button__button::after {
   letter-spacing: 0.01em;
   text-align: center;
 }
+.header-block {
+    margin-bottom: 20px;
+}
+
 @media (max-width: 450px) {
   #site-footer .ft-copywrite p {
     font-size: 1.5rem;
