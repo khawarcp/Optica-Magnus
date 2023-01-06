@@ -26,6 +26,16 @@ button, a {
     font-weight: 300;
     color: #868e96;
 }
+button#scrollBtn {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+}
+
+.slide-main.slick-slide {
+    position: relative;
+}
 
 
 
