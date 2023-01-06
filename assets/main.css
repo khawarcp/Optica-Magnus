@@ -1438,7 +1438,7 @@ button.shopify-payment-button__button::after {
     align-items: center;
 }
 .slider-sec .slider-content-block {
-    height: 70%;
+    height: auto;
 }
 .slider-sec .slider-content-block .header-block {
   text-align: center;
