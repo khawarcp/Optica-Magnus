@@ -1410,8 +1410,11 @@ button.shopify-payment-button__button::after {
     height: 52.9rem;
   }
 }
-.slider-sec .slider-card > .container {
-  height: 100%;
+.slider-sec .slider-card>.container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .slider-sec .slider-content-block {
     height: 70%;
