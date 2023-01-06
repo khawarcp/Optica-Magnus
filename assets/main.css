@@ -20,6 +20,13 @@ button, a {
   margin-inline: auto;
   padding-inline: 15px;
 }
+.description_text {
+    font-size: 1.4rem;
+    line-height: 2.6rem;
+    font-weight: 300;
+    color: #868e96;
+}
+
 
 
 @media (max-width: 1200px) {
