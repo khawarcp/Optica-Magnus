@@ -1251,3 +1251,10 @@ a.product__text {
     color: #424242;
     text-transform: uppercase;
 }
+.product__description p {
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+    font-weight: 300;
+    color: #212529;
+    text-transform: uppercase;
+}
