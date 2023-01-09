@@ -19,7 +19,9 @@
         </li>
          <li>
           <span data-toggle="image_circle_tab">
+            {% if product.metafields.custom.technical_information_image != blank %}
             {{ section.settings.tab_heading_three }}
+            {% endif %}
           </span>
         </li>
 
