@@ -17,7 +17,7 @@
           </span>
         </li>
         {% endif %}
-        {% if product.metafields.custom.technical_information_image != blank %}
+        {% if product.metafields.custom.image_circle != blank %}
          <li>
           <span data-toggle="image_circle_tab">
             {{ section.settings.tab_heading_three }}
@@ -43,15 +43,8 @@
         </div>
         <div data-aos="fade-up" data-aos-duration="1100" data-target="technical_info_tab" class="ctm-tabs-pan">
           <div class="technical-info-block">
-          {% if product.metafields.custom.technical_information_image != blank %}
-              <img src="{{ product.metafields.custom.technical_information_image | img_url: 'master' }}" loading="lazy" alt="{{ section.settings.info_image.alt }}" class="img-fluid">
-          {% endif %}
-          </div>
-        </div>
-         <div data-aos="fade-up" data-aos-duration="1100" data-target="image_circle_tab" class="ctm-tabs-pan">
-          <div class="technical-info-block">
-          {% if product.metafields.custom.technical_information_image %}
-              <img src="{{ product.metafields.custom.technical_information_image | img_url: 'master' }}" loading="lazy" alt="{{ section.settings.info_image.alt }}" class="img-fluid">
+          {% if product.metafields.custom.image_circle != blank %}
+              <img src="{{ product.metafields.custom.image_circle | img_url: 'master' }}" loading="lazy" alt="{{ section.settings.info_image.alt }}" class="img-fluid">
           {% endif %}
           </div>
         </div>
