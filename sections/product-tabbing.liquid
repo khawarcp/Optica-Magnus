@@ -3,28 +3,28 @@
   <div class="container">
     <div class="custom-tabs">
       <ul class="ctm-tabs-ul d-flex align-items-center">
+         {% if product.metafields.custom.text_description != blank %}
         <li class="active">
           <span data-toggle="description">
-             {% if product.metafields.custom.text_description != blank %}
               {{ section.settings.tab_heading_one }}
-              {% endif %}
           </span>
         </li>
+        {% endif %}
+         {% if product.metafields.custom.description_image != blank %}
         <li>
           <span data-toggle="technical_info_tab">
-             {% if product.metafields.custom.description_image != blank %}
               {{ section.settings.tab_heading_two }}
-             {% endif %}
           </span>
         </li>
+        {% endif %}
+        {% if product.metafields.custom.technical_information_image != blank %}
          <li>
           <span data-toggle="image_circle_tab">
-            {% if product.metafields.custom.technical_information_image != blank %}
             {{ section.settings.tab_heading_three }}
-            {% endif %}
+            
           </span>
         </li>
-
+       {% endif %}
       </ul>
       <div class="tab-content">
         <div data-aos="fade-up" data-aos-duration="1100" data-target="description" class="ctm-tabs-pan active">
