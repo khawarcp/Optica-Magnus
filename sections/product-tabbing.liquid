@@ -5,12 +5,16 @@
       <ul class="ctm-tabs-ul d-flex align-items-center">
         <li class="active">
           <span data-toggle="description">
-            {{ section.settings.tab_heading_one }}
+             {% if product.metafields.custom.text_description != blank %}
+              {{ section.settings.tab_heading_one }}
+              {% endif %}
           </span>
         </li>
         <li>
           <span data-toggle="technical_info_tab">
-            {{ section.settings.tab_heading_two }}
+             {% if product.metafields.custom.description_image != blank %}
+              {{ section.settings.tab_heading_two }}
+             {% endif %}
           </span>
         </li>
          <li>
