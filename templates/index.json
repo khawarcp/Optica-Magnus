@@ -104,8 +104,8 @@
       "settings": {
         "heading": "Magnification Of Multiple Formats from Academy To Full Frame And 2 X Anamorphic.",
         "image": "shopify:\/\/shop_images\/call-to-action-bg.jpg",
-        "button_text": "DISCOVER OUR PRODUCTS",
-        "button_url": "shopify:\/\/collections\/products"
+        "button_text": "Finder",
+        "button_url": "https:\/\/optica-magnus-cp.myshopify.com\/products\/full-frame-finder"
       }
     }
   },
