@@ -21,10 +21,10 @@ button, a {
   padding-inline: 15px;
 }
 .description_text {
-    font-size: 2.2rem;
-    line-height: 3.7rem;
-    font-weight: 500;
-    color: #424242;
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+    font-weight: 300;
+    color: #212529;
 }
 button#scrollBtn {
     position: absolute;
