@@ -1012,6 +1012,13 @@ button.shopify-payment-button__button::after {
 #site-header.sticky .logo, #site-header.static .logo {
   max-width: 18.7rem;
 }
+.products-sec .secondary-title {
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+    font-weight: 300;
+    color: #212529;
+}
+
 @media (max-width: 450px) {
   #site-header.sticky .logo, #site-header.static .logo {
     max-width: 17.7rem;
