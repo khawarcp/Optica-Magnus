@@ -4,6 +4,9 @@
   <div class="call-to-action-block" loading="lazy" style="background-image: url('{{ section.settings.image | img_url: 'master' }}');">
     <div class="desc-block">
       <h4 data-aos="fade-left" data-aos-duration="1000" class="title">
+        {{ section.settings.sub_heading }}
+      </h4>
+      <h4 data-aos="fade-left" data-aos-duration="1000" class="title">
         {{ section.settings.heading }}
       </h4>
       {%- if section.settings.button_text != blank -%}
@@ -24,7 +27,14 @@
         "id": "heading",
         "label": "Heading",
         "default": "Magnification Of Multiple Formats from Academy To Full Frame And 2 X Anamorphic."
-      }, {
+      },
+      {
+        "type": "text",
+        "id": "sub_heading",
+        "label": "Sub Heading",
+        "default": "The Most Sophisticated True Optical Viewfinder System."
+      },
+      {
         "type": "image_picker",
         "id": "image",
         "label": "Image"
