@@ -1419,11 +1419,11 @@ button.shopify-payment-button__button::after {
 }
 
 .slider-sec .slider-card {
-  height: 100vh;
+  height: 85vh;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  padding-top: 13.7rem;
+  padding-top: 7.7rem;
   padding-bottom: 3.2rem;
 }
 @media (max-width: 991px) {
