@@ -11,7 +11,7 @@
         </li>
         {% endif %}
         {% if product.metafields.custom.technical_specs != blank %}
-        <li>
+        <li {% if product.metafields.custom.text_description == blank and product.metafields.custom.image_circle == blank %} class="active" {% endif %}>
           <span data-toggle="technical_info_tab">
               {{ section.settings.tab_heading_two }}
           </span>
