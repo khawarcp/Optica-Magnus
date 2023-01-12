@@ -18,7 +18,7 @@
         </li>
         {% endif %}
         {% if product.metafields.custom.image_circle != blank %}
-         <li>
+         <li {% if product.metafields.custom.text_description == blank and product.metafields.custom.technical_specs == blank %} class="active" {% endif %}>
           <span data-toggle="image_circle_tab">
             {{ section.settings.tab_heading_three }}
             
@@ -36,14 +36,14 @@
           {% endif %}
         </div>
         
-        <div data-aos="fade-up" data-aos-duration="1100" data-target="technical_info_tab" class="ctm-tabs-pan">
+        <div data-aos="fade-up" data-aos-duration="1100" data-target="technical_info_tab" class="ctm-tabs-pan {% if product.metafields.custom.text_description == blank and product.metafields.custom.image_circle == blank %} active {% endif %}">
           {% if product.metafields.custom.technical_specs != blank %}
           <div class="description_text">
              {{ product.metafields.custom.technical_specs }}
           </div>
           {% endif %}
         </div>
-         <div data-aos="fade-up" data-aos-duration="1100" data-target="image_circle_tab" class="ctm-tabs-pan">
+         <div data-aos="fade-up" data-aos-duration="1100" data-target="image_circle_tab" class="ctm-tabs-pan {% if product.metafields.custom.text_description == blank and product.metafields.custom.technical_specs == blank %} active {% endif %}">
           <div class="technical-info-block">
           {% if product.metafields.custom.image_circle != blank %}
               <img src="{{ product.metafields.custom.image_circle | img_url: 'master' }}" loading="lazy" alt="{{ section.settings.info_image.alt }}" class="img-fluid">
