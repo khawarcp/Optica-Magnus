@@ -227,10 +227,12 @@
           "button_url": "",
           "heading_1": "Full Frame Finder",
           "menu_1": "product-menu",
-          "heading_2": "Useful Links",
-          "menu_2": "footer",
-          "heading_3": "LEGAL",
-          "menu_3": "legal",
+          "heading_2": "Rental Locations",
+          "menu_2": "",
+          "heading_3": "Vendor List",
+          "menu_3": "",
+          "heading_4": "LEGAL",
+          "menu_4": "legal",
           "copy": "All Rights Reserved | All other trademarks and logos belong to their respective corporate and\/or franchisee clients."
         }
       },
