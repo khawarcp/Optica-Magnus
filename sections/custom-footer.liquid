@@ -86,6 +86,20 @@
                   {%- endfor -%}
                 </ul>
               </div>
+              <div class="ft-last-col">
+                <h3 class="ft-title">
+                  {{ section.settings.heading_3 }}
+                </h3>
+                <ul class="ft-links-ul">
+                  {%- for link in linklists[section.settings.menu_3].links -%}
+                    <li>
+                      <a href="{{ link.url }}">
+                        {{ link.title }}
+                      </a>
+                    </li>
+                  {%- endfor -%}
+                </ul>
+              </div>
             </div>
           </div>
 
