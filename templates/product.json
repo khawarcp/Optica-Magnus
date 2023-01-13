@@ -29,9 +29,10 @@
             "show_dynamic_checkout": false
           }
         },
-        "0edce41d-bee3-46ab-b686-e1895fe48f35": {
-          "type": "shopify:\/\/apps\/bundle-products-upsell\/blocks\/product-variant-all-bundles\/0a9e67ff-0413-4374-921d-e70fb17c7dbc",
+        "589090a1-336f-4792-823e-1b74773a7c6e": {
+          "type": "custom_liquid",
           "settings": {
+            "custom_liquid": "<div class=\"th_pb_section th_pb_specific_bundles\" data-bundleid=\"111445\"><\/div>"
           }
         }
       },
@@ -41,7 +42,7 @@
         "description",
         "quantity_selector",
         "buy_buttons",
-        "0edce41d-bee3-46ab-b686-e1895fe48f35"
+        "589090a1-336f-4792-823e-1b74773a7c6e"
       ],
       "settings": {
         "enable_sticky_info": true,
