@@ -52,8 +52,9 @@
     "tabbing": {
       "type": "product-tabbing",
       "settings": {
-        "info_image": "{{ product.metafields.custom.description_image.value }}",
-        "tech_image": "{{ product.metafields.custom.technical_information_image.value }}"
+        "tab_heading_one": "More Information",
+        "tab_heading_two": "Technical Specs",
+        "tab_heading_three": "Image Circle"
       }
     },
     "product-recommendations": {
