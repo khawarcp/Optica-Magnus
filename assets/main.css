@@ -864,9 +864,31 @@ button.shopify-payment-button__button::after {
   }
 }
 @media only screen and (max-width: 768px) {
-  #site-header .humberg-icon {
-    display: flex !important;
-  }
+  #site-header .menu-icon-block {
+    gap: 0rem 2rem;
+    flex-wrap: nowrap !important;
+}
+
+.header-row.d-flex.justify-content-between.align-items-center.flex-wrap {
+    flex-wrap: nowrap !important;
+}
+
+#site-header .menu-icon-block .icon-block {
+    gap: 1rem;
+}
+
+#site-header .container {
+    max-width: 100%;
+}
+
+#site-header .menu-icon-block .main-menu {
+    gap: 1.5rem;
+}
+
+#site-header .humberg-icon {
+    display: none !important;
+}
+  
 }
 @media only screen and (max-width: 600px) {
   .section-template--17062378635579__main-padding {
