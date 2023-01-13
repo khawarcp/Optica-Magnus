@@ -1352,7 +1352,7 @@ button.shopify-payment-button__button::after {
   }
 }
 #site-footer .ft-links-row .ft-last-col {
-  width: calc(22.8% - 4.66rem);
+  width: 16%;
 }
 @media (max-width: 767px) {
   #site-footer .ft-links-row > div[class^=ft] {
