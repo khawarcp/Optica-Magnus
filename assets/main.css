@@ -1281,6 +1281,9 @@ button.shopify-payment-button__button::after {
   #site-footer .ft-row .ft-logo-col {
     width: 40%;
   }
+  #site-header .humberg-icon {
+    display: block !important;
+}
 }
 @media (max-width: 575px) {
   #site-footer .ft-row .ft-logo-col {
