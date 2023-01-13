@@ -1245,6 +1245,7 @@ button.shopify-payment-button__button::after {
 #site-footer .ft-row {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 #site-footer .ft-row .ft-logo-col {
   width: 22%;
