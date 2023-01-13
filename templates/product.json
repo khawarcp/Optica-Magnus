@@ -32,7 +32,7 @@
         "589090a1-336f-4792-823e-1b74773a7c6e": {
           "type": "custom_liquid",
           "settings": {
-            "custom_liquid": "<div class=\"th_pb_section th_pb_specific_bundles\" data-bundleid=\"111445\"><\/div>"
+            "custom_liquid": "{%if product.handle == 'full-frame-finder' %}\n<div class=\"th_pb_section th_pb_specific_bundles\" data-bundleid=\"111445\">\n<\/div>\n{% endif %}"
           }
         }
       },
