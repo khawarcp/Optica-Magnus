@@ -28,6 +28,11 @@
           "settings": {
             "show_dynamic_checkout": false
           }
+        },
+        "4d0455bd-df25-4a87-bdb0-5d1f20e2f372": {
+          "type": "shopify:\/\/apps\/bundle-products-upsell\/blocks\/product-variant-all-bundles\/0a9e67ff-0413-4374-921d-e70fb17c7dbc",
+          "settings": {
+          }
         }
       },
       "block_order": [
@@ -35,7 +40,8 @@
         "price",
         "description",
         "quantity_selector",
-        "buy_buttons"
+        "buy_buttons",
+        "4d0455bd-df25-4a87-bdb0-5d1f20e2f372"
       ],
       "settings": {
         "enable_sticky_info": true,
