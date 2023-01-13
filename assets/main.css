@@ -1341,7 +1341,7 @@ button.shopify-payment-button__button::after {
 }
 @media (max-width: 1230px) {
   #site-footer .ft-links-row .ft-products-col {
-    width: calc(42.47% - 4.66rem);
+   width: 30%;
   }
 }
 #site-footer .ft-links-row .ft-about-col {
