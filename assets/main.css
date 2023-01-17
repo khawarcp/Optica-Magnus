@@ -1015,7 +1015,7 @@ button.shopify-payment-button__button::after {
     align-items: center;
 }
 .pagination__list {
-    flex-wrap: initial;
+    flex-wrap: initial !important;
 }
 
 #site-header {
