@@ -1009,6 +1009,14 @@ button.shopify-payment-button__button::after {
 #site-header .humberg-icon span:last-child {
   margin-bottom: 0px;
 }
+.pagination-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pagination__list {
+    flex-wrap: initial;
+}
 
 #site-header {
   position: absolute;
