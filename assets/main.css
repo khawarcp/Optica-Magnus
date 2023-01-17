@@ -1017,7 +1017,12 @@ button.shopify-payment-button__button::after {
 .pagination__list {
     flex-wrap: initial !important;
 }
-
+.th_pb_wf {
+    right: 12px;
+}
+.th_pb_grid_layout_3 .th_pb_list_ul_layout_3 .li_product_list_layout_3::after {
+    right: 5px;
+}
 #site-header {
   position: absolute;
   left: 0;
