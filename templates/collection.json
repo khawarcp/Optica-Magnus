@@ -38,7 +38,7 @@
         "title": "",
         "heading_size": "h1",
         "description": "",
-        "show_description": false,
+        "show_description": true,
         "description_style": "body",
         "collection": "products",
         "products_to_show": 4,
