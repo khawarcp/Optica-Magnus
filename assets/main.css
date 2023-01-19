@@ -36,7 +36,9 @@ button#scrollBtn {
 .slide-main.slick-slide {
     position: relative;
 }
-
+.collection-hero {
+    display: none;
+}
 
 
 @media (max-width: 1200px) {
