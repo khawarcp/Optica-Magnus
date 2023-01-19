@@ -18,7 +18,6 @@
     },
     "product-grid": {
       "type": "main-collection-product-grid",
-      "disabled": true,
       "settings": {
         "products_per_page": 16,
         "columns_desktop": 4,
@@ -35,6 +34,7 @@
     },
     "e4ada1e4-a85b-4c2f-8a0d-73c72e9a7ba3": {
       "type": "featured-collection",
+      "disabled": true,
       "settings": {
         "title": "",
         "heading_size": "h1",
