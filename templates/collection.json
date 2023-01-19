@@ -9,7 +9,6 @@
     },
     "banner": {
       "type": "main-collection-banner",
-      "disabled": true,
       "settings": {
         "show_collection_description": true,
         "show_collection_image": false,
@@ -34,11 +33,10 @@
     },
     "e4ada1e4-a85b-4c2f-8a0d-73c72e9a7ba3": {
       "type": "featured-collection",
-      "disabled": true,
       "settings": {
-        "title": "",
+        "title": "OPTICA MAGNUS PRODUCTS",
         "heading_size": "h1",
-        "description": "",
+        "description": "<p>When Optimizing An Xpander Or Anamorphic Conversion, We Consider The Original Patina Of The Lens To Be Converted.<br\/><br\/>At Optica Magnus, We Strive For Optical Perfection Concerning Resolution, Light Field Coverage, And Distortion. Close Attention Is Given To The Look And Feel Produced. We Use The Most Advanced Optical Glass With The Highest Aberration, Density, And Distortion Standards.<br\/><br\/>When We Optimize An Expander Or Anamorphic Conversion, We Consider The Lens's Original Patina. Lenses Can Show Great Values On Focus Charts, But That Does Not Imply That The Lens Adequately Renders Faces And Landscapes Or Offers Pleasing Flares And A Bouquet With A Desired Look.<br\/><br\/>Optica Magnus Xpanders Make Zoom Lenses Compatible With Popular Vintage Prime Lenses And Bring Life Back To Some Of These Great Zoom Optics Of The Past.<br\/><br\/><strong>MAGNIFICATION TO MULTIPLE FORMATS FROM ACADEMY TO FULL FRAME AND 2X ANAMORPHIC<\/strong><\/p>",
         "show_description": false,
         "description_style": "body",
         "collection": "products",
