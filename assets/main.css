@@ -71,17 +71,21 @@ ul.th_pb_list_ul.th_pb_list_ul_layout_3.th_pb_list_ul_index_5 {
 /* width */
 ::-webkit-scrollbar {
   width: 6px;
-  border-radius : 5px;
+     border-radius: 50%;
+
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
   background: #f1f1f1; 
+      border-radius: 50%;
+
 }
  
 /* Handle */
 ::-webkit-scrollbar-thumb {
   background: #888; 
+    border-radius: 50%;
 }
 
 /* Handle on hover */
