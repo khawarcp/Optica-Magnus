@@ -92,7 +92,7 @@ ul.th_pb_list_ul.th_pb_list_ul_layout_3.th_pb_list_ul_index_5 {
   background: #555; 
 }
 .product__media.media.media--transparent.gradient.global-media-settings {
-    height: 77.8rem;
+    height: 77.8rem !important;
 }
 @media (max-width: 1200px) {
   .container {
