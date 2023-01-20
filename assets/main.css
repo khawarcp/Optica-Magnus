@@ -1927,7 +1927,7 @@ button.shopify-payment-button__button::after {
 }
 @media (max-width: 991px) {
  .product-dt-sec .primary-btn {
-  top: -45px !important;
+  top: -35px !important;
 }
 }
 @media (max-width: 449px) {
