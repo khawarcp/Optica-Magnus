@@ -1837,6 +1837,7 @@ button.shopify-payment-button__button::after {
   .product-row .pd-col {
     width: calc(33.33% - 3.2rem);
   }
+  
 }
 @media (max-width: 767px) {
   .product-row .pd-col {
@@ -1916,7 +1917,17 @@ button.shopify-payment-button__button::after {
   display:flex;
   position: relative !important;
   left: 145px !important;
+  top: -70px !important;
+}
+@media (max-width: 991px) {
+ .product-dt-sec .primary-btn {
   top: -45px !important;
+}
+}
+@media (max-width: 767px) {
+  .product-dt-sec .primary-btn {
+  top: -30px !important;
+}
 }
 .product-dt-sec .product-dt-img-block {
   max-width: 100%;
