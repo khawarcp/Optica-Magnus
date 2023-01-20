@@ -56,6 +56,9 @@ ul.th_pb_list_ul.th_pb_list_ul_layout_3.th_pb_list_ul_index_5 {
 .th_pb_list_content figure a img {
     max-width: 120px;
 }
+.th_pb_separatly_price_text {
+    font-weight: 700;
+}
 
 .th_pb_list_content.th_pb_wf.th_pb_list_content_layout_3 {
     display: flex;
