@@ -1914,6 +1914,9 @@ button.shopify-payment-button__button::after {
 .product__info-container>*+*{
   margin: 0 !important;
 }
+.product__info-container .product-form, .product__info-container .product__description {
+    margin: 0;
+}
 .product-dt-sec .primary-btn {
   height: 4rem;
   min-width: 13.3rem;
