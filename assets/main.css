@@ -45,7 +45,6 @@ button#scrollBtn {
 }
 .li_product_list_layout_3 .th_pb_list_content_layout_3 figure.th_product_img_layout_3{
   width:100% !important;
-  padding: 0px 15px 0 !important;
 }
 ul.th_pb_list_ul.th_pb_list_ul_layout_3.th_pb_list_ul_index_5 {
     display: block;
@@ -1914,6 +1913,10 @@ button.shopify-payment-button__button::after {
 .product-dt-sec .primary-btn {
   height: 4rem;
   min-width: 13.3rem;
+  display:flex;
+  position: relative !important;
+  left: 145px !important;
+  top: -45px !important;
 }
 .product-dt-sec .product-dt-img-block {
   max-width: 100%;
