@@ -39,6 +39,9 @@ button#scrollBtn {
 .collection-hero {
     display: none;
 }
+.th_pb_grid_layout_3 .th_pb_list_ul_layout_3 .li_product_list_layout_3.li_product_list_four_grid {
+    width: 100% !important;
+}
 ul.th_pb_list_ul.th_pb_list_ul_layout_3.th_pb_list_ul_index_5 {
     display: block;
     width: 100%;
