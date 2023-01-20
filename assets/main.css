@@ -65,6 +65,7 @@ ul.th_pb_list_ul.th_pb_list_ul_layout_3.th_pb_list_ul_index_5 {
 
 .th_pb_figure_div_layout_3.th_pb_wf {
     width: 30%;
+  padding-left:15px !important;
 }
 .th_pb_section .th_pb_list_content, .th_pb_custom_bundle .th_pb_list_content{
   border-bottom: 1px solid #DDDDDD !important;
