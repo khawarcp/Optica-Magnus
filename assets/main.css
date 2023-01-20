@@ -91,6 +91,9 @@ ul.th_pb_list_ul.th_pb_list_ul_layout_3.th_pb_list_ul_index_5 {
 ::-webkit-scrollbar-thumb:hover {
   background: #555; 
 }
+.product__media.media.media--transparent.gradient.global-media-settings {
+    height: 77.8rem;
+}
 @media (max-width: 1200px) {
   .container {
     max-width: 1100px;
