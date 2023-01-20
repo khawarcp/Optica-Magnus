@@ -1911,13 +1911,16 @@ button.shopify-payment-button__button::after {
     padding-bottom: 5rem;
   }
 }
+.product__info-container>*+*{
+  margin: 0 !important;
+}
 .product-dt-sec .primary-btn {
   height: 4rem;
   min-width: 13.3rem;
   display:flex;
   position: relative !important;
   left: 145px !important;
-  top: -70px !important;
+  top: -45px !important;
 }
 @media (max-width: 991px) {
  .product-dt-sec .primary-btn {
