@@ -1915,7 +1915,7 @@ button.shopify-payment-button__button::after {
   margin: 0 !important;
 }
 .product__info-container .product-form, .product__info-container .product__description {
-    margin: 0;
+    margin: 0 !important;
 }
 .product-dt-sec .primary-btn {
   height: 4rem;
