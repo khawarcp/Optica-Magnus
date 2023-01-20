@@ -39,7 +39,25 @@ button#scrollBtn {
 .collection-hero {
     display: none;
 }
+ul.th_pb_list_ul.th_pb_list_ul_layout_3.th_pb_list_ul_index_5 {
+    display: block;
+    width: 100%;
+    overflow-y: auto;
+    height: 269px;
+}
 
+.th_pb_list_content figure a img {
+    max-width: 120px;
+}
+
+.th_pb_list_content.th_pb_wf.th_pb_list_content_layout_3 {
+    display: flex;
+    align-items: center;
+}
+
+.th_pb_figure_div_layout_3.th_pb_wf {
+    width: 20%;
+}
 
 @media (max-width: 1200px) {
   .container {
