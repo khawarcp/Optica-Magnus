@@ -1932,7 +1932,7 @@ button.shopify-payment-button__button::after {
 }
 @media (max-width: 449px) {
   .product-dt-sec .primary-btn {
-  top: -50px !important;
+  top: -30px !important;
 }
 }
 .product-dt-sec .product-dt-img-block {
