@@ -43,6 +43,9 @@ button#scrollBtn {
     width: 100% !important;
     max-width: 100%;
 }
+.li_product_list_layout_3 .th_pb_list_content_layout_3 figure.th_product_img_layout_3{
+  width:100%;
+}
 ul.th_pb_list_ul.th_pb_list_ul_layout_3.th_pb_list_ul_index_5 {
     display: block;
     width: 100%;
