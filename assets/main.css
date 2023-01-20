@@ -61,6 +61,7 @@ ul.th_pb_list_ul.th_pb_list_ul_layout_3.th_pb_list_ul_index_5 {
 .th_pb_list_content.th_pb_wf.th_pb_list_content_layout_3 {
     display: flex;
     align-items: center;
+    padding: 0 !important;
 }
 
 .th_pb_figure_div_layout_3.th_pb_wf {
