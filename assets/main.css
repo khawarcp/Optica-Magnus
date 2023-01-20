@@ -92,9 +92,9 @@ ul.th_pb_list_ul.th_pb_list_ul_layout_3.th_pb_list_ul_index_5 {
 ::-webkit-scrollbar-thumb:hover {
   background: #555; 
 }
-/* .product__media.media.media--transparent.gradient.global-media-settings {
-    height: 75.8rem !important;
-} */
+.product__media.media.media--transparent.gradient.global-media-settings {
+    height: 66.8rem !important;
+}
 .th_pb_section .th_pb_bundle_layout_3{
   padding:0 !important;
 }
