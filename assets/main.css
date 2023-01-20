@@ -94,6 +94,9 @@ ul.th_pb_list_ul.th_pb_list_ul_layout_3.th_pb_list_ul_index_5 {
 .product__media.media.media--transparent.gradient.global-media-settings {
     height: 77.8rem !important;
 }
+.th_pb_section .th_pb_bundle_layout_3{
+  padding:0 !important;
+}
 @media (max-width: 1200px) {
   .container {
     max-width: 1100px;
