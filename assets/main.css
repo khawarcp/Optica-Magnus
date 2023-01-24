@@ -109,6 +109,9 @@ ul.th_pb_list_ul.th_pb_list_ul_layout_3.th_pb_list_ul_index_5 {
 }
 .sec-header p{
       color: #868e96 !important;
+      font-size: 1.6rem;
+    line-height: 2.6rem;
+    font-weight: 300;
 }
 .th_pb_section .th_pb_bundle_layout_3{
   padding:0 !important;
