@@ -28,12 +28,6 @@
           "settings": {
             "show_dynamic_checkout": false
           }
-        },
-        "589090a1-336f-4792-823e-1b74773a7c6e": {
-          "type": "custom_liquid",
-          "settings": {
-            "custom_liquid": "{%if product.handle == 'full-frame-finder' %}\n<div class=\"th_pb_section th_pb_specific_bundles\" data-bundleid=\"111445\"><\/div>\n{% endif %}"
-          }
         }
       },
       "block_order": [
@@ -41,8 +35,7 @@
         "price",
         "description",
         "quantity_selector",
-        "buy_buttons",
-        "589090a1-336f-4792-823e-1b74773a7c6e"
+        "buy_buttons"
       ],
       "settings": {
         "enable_sticky_info": true,
