@@ -112,6 +112,9 @@ ul.th_pb_list_ul.th_pb_list_ul_layout_3.th_pb_list_ul_index_5 {
   line-height: 2.6rem !important;
   font-weight: 300 !important;
 }
+.sec-header strong{
+      color: #e52520 !important;
+}
 .th_pb_section .th_pb_bundle_layout_3{
   padding:0 !important;
 }
