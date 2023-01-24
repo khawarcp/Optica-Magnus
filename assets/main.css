@@ -108,7 +108,7 @@ ul.th_pb_list_ul.th_pb_list_ul_layout_3.th_pb_list_ul_index_5 {
   padding-inline: 15px;
 }
 .sec-header p{
-      color: #868e96;
+      color: #868e96 !important;
 }
 .th_pb_section .th_pb_bundle_layout_3{
   padding:0 !important;
