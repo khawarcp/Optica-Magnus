@@ -3,6 +3,16 @@
     "98bf8f6a-3698-414f-8eda-c161d5e5bdf5": {
       "type": "index-slider",
       "blocks": {
+        "95dc7c6e-1c6f-4958-bed7-4c5409c3f942": {
+          "type": "Slide",
+          "settings": {
+            "heading": "",
+            "subheading": "",
+            "image": "shopify:\/\/shop_images\/Banner_02.jpg",
+            "button_text": "",
+            "button_url": ""
+          }
+        },
         "31343c22-9d07-40f9-af9f-379459051dc5": {
           "type": "Slide",
           "settings": {
@@ -35,6 +45,7 @@
         }
       },
       "block_order": [
+        "95dc7c6e-1c6f-4958-bed7-4c5409c3f942",
         "31343c22-9d07-40f9-af9f-379459051dc5",
         "4a90852a-f77f-493d-9303-61b4bda49e9b",
         "40878181-5e45-4fee-93b9-1b87fbfb8f48"
