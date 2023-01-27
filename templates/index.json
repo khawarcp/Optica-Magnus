@@ -13,26 +13,6 @@
             "button_url": "shopify:\/\/collections\/expanders"
           }
         },
-        "31343c22-9d07-40f9-af9f-379459051dc5": {
-          "type": "Slide",
-          "settings": {
-            "heading": "EXPANDING YOUR vision",
-            "subheading": "OPTICA MAG<span>NUS<\/span>",
-            "image": "shopify:\/\/shop_images\/c232737e-f9e3-4a8a-9be0-3ee7af6828e3.jpg",
-            "button_text": "Expanders",
-            "button_url": "shopify:\/\/collections\/expanders"
-          }
-        },
-        "4a90852a-f77f-493d-9303-61b4bda49e9b": {
-          "type": "Slide",
-          "settings": {
-            "heading": "EXPANDING YOUR vision",
-            "subheading": "OPTICA MAG<span>NUS<\/span>",
-            "image": "shopify:\/\/shop_images\/c232737e-f9e3-4a8a-9be0-3ee7af6828e3.jpg",
-            "button_text": "Expanders",
-            "button_url": "shopify:\/\/collections\/expanders"
-          }
-        },
         "40878181-5e45-4fee-93b9-1b87fbfb8f48": {
           "type": "Slide",
           "disabled": true,
@@ -46,8 +26,6 @@
       },
       "block_order": [
         "95dc7c6e-1c6f-4958-bed7-4c5409c3f942",
-        "31343c22-9d07-40f9-af9f-379459051dc5",
-        "4a90852a-f77f-493d-9303-61b4bda49e9b",
         "40878181-5e45-4fee-93b9-1b87fbfb8f48"
       ],
       "settings": {
