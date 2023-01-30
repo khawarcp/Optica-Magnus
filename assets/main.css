@@ -118,14 +118,17 @@ ul.th_pb_list_ul.th_pb_list_ul_layout_3.th_pb_list_ul_index_5 {
 .th_pb_section .th_pb_bundle_layout_3{
   padding:0 !important;
 }
-.products-banner .banner-content {
-    height: 34.9rem;
+section.products-banner::after {
+    position: absolute;
+    content: "";
+    background-image: url(https://cdn.shopify.com/s/files/1/0682/9624/5563/files/Finder_Page-New_458a8f6f-4699-44af-bebe-8144f0e08fdc.jpg?v=1675119202);
+    height: 100%;
+    width: 100%;
+    top: 0;
+    z-index: -1;
+    background-position: right;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: right;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 @media (max-width: 1200px) {
