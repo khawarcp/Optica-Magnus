@@ -130,6 +130,11 @@ section.products-banner::after {
     background-repeat: no-repeat;
     background-size: cover;
 }
+section.products-banner {
+    position: relative;
+}
+
+
 
 @media (max-width: 1200px) {
   .container {
