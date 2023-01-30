@@ -1,5 +1,12 @@
 {
   "sections": {
+    "3f839105-0d2d-43ce-9b8a-1055071167c6": {
+      "type": "page-banner",
+      "settings": {
+        "background_image": "shopify:\/\/shop_images\/Finder_Page-New_b1f33ca2-343e-47ea-af82-0ee4aa1caf75.jpg",
+        "heading": "finder image"
+      }
+    },
     "main": {
       "type": "main-product",
       "blocks": {
@@ -103,6 +110,7 @@
     }
   },
   "order": [
+    "3f839105-0d2d-43ce-9b8a-1055071167c6",
     "main",
     "tabbing",
     "product-recommendations",
