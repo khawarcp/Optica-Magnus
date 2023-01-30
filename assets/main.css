@@ -133,6 +133,9 @@ section.products-banner::after {
 section.products-banner {
     position: relative;
 }
+.banner-content {
+    background: transparent !important;
+}
 
 
 
