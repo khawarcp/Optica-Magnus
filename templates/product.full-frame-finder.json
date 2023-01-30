@@ -1,10 +1,10 @@
 {
   "sections": {
-    "3f839105-0d2d-43ce-9b8a-1055071167c6": {
+    "3df2fb52-4449-4570-89ac-6f88ee52f83e": {
       "type": "page-banner",
       "settings": {
         "background_image": "shopify:\/\/shop_images\/Finder_Page-New_b1f33ca2-343e-47ea-af82-0ee4aa1caf75.jpg",
-        "heading": "Finder"
+        "heading": "Finder Images"
       }
     },
     "main": {
@@ -110,7 +110,7 @@
     }
   },
   "order": [
-    "3f839105-0d2d-43ce-9b8a-1055071167c6",
+    "3df2fb52-4449-4570-89ac-6f88ee52f83e",
     "main",
     "tabbing",
     "product-recommendations",
