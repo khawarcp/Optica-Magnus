@@ -125,22 +125,18 @@ section.products-banner::after {
     height: 100%;
     width: 100%;
     top: 0;
-    z-index: 9;
-    background-position: right -100px center;
+    z-index: -1;
+    background-position: right;
     background-repeat: no-repeat;
     background-size: cover;
 }
 section.products-banner {
     position: relative;
-    background-color: black;
 }
 .banner-content {
     background: transparent !important;
 }
-.banner-content {
-    position: relative;
-    z-index: 9999;
-}
+
 
 
 @media (max-width: 1200px) {
