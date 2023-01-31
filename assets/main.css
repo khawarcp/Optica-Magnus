@@ -137,6 +137,17 @@ body.gradient.template-product-full-frame-finder .banner-content {
     background: transparent !important;
 } */
 
+body.gradient.template-product-full-frame-finder .products-banner .banner-content {
+    height: 34.9rem;
+    background-repeat: no-repeat;
+    background-size: 78% 100%;
+    background-position: center right;
+    display: flex;
+    justify-content: center;
+    background-color: #010101 !important;
+    align-items: center;
+}
+
 
 
 @media (max-width: 1200px) {
