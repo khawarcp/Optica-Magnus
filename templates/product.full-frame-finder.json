@@ -1,12 +1,5 @@
 {
   "sections": {
-    "3df2fb52-4449-4570-89ac-6f88ee52f83e": {
-      "type": "page-banner",
-      "settings": {
-        "background_image": "shopify:\/\/shop_images\/Finder_Page-New_458a8f6f-4699-44af-bebe-8144f0e08fdc.jpg",
-        "heading": "Full Frame Finder"
-      }
-    },
     "4216e7e1-2677-421c-adeb-0b10bea68b32": {
       "type": "product-banner",
       "settings": {
@@ -117,7 +110,6 @@
     }
   },
   "order": [
-    "3df2fb52-4449-4570-89ac-6f88ee52f83e",
     "4216e7e1-2677-421c-adeb-0b10bea68b32",
     "main",
     "tabbing",
