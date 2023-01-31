@@ -7,6 +7,13 @@
         "heading": "Full Frame Finder"
       }
     },
+    "4216e7e1-2677-421c-adeb-0b10bea68b32": {
+      "type": "product-banner",
+      "settings": {
+        "background_image": "shopify:\/\/shop_images\/Finder_Page-New_49716563-b1a1-41c0-a798-0be77b30a773.jpg",
+        "heading": "Full Frame Finder"
+      }
+    },
     "main": {
       "type": "main-product",
       "blocks": {
@@ -111,6 +118,7 @@
   },
   "order": [
     "3df2fb52-4449-4570-89ac-6f88ee52f83e",
+    "4216e7e1-2677-421c-adeb-0b10bea68b32",
     "main",
     "tabbing",
     "product-recommendations",
