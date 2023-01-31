@@ -1,12 +1,63 @@
+<section class="products-banner">
+  {% if template contains 'collection'  %}
+    {% if collection.image != blank %}
+    <div class="banner-content" loading="lazy" style="background-color:#010101; background-image: url('{{ collection.image | img_url: 'master' }}');">
+     {% else %}
+    <div class="banner-content" loading="lazy" style="background-image: url('{{ section.settings.background_image | img_url: 'master' }}');">    
+    {% endif %}
+  {% else %}         
+    <div class="banner-content" loading="lazy"
+    {% if template.suffix contains 'policy' and section.settings.background_image != blank %} style="background-image: url('{{ section.settings.background_image | img_url: 'master' }}');"
+      {% elsif template contains 'blog' and section.settings.background_image != blank %}  style="background-color:#04090c; background-image: url('{{ section.settings.background_image | img_url: 'master' }}');"
+      {% elsif template contains 'page' and section.settings.background_image != blank %}  style="background-color: #051924;background-image: url('{{ section.settings.background_image | img_url: 'master' }}');"
+      {% else %} style="background-color: #0A1823;" {% endif %}>
+    {% endif %}
+    <div class="sec-header">
+      <h2 data-aos="fade-down" data-aos-duration="1000" class="prime-title">
+        {{ section.settings.heading }}
+      </h2>
+      <h3 data-aos="fade-up" data-aos-duration="1000" class="secondary-title mb-0">
+        {% if template contains 'page'  %}
+          {{ page.title }}
+        {% elsif template contains 'collection' %}
+          {{ collection.title }}
+        {% elsif template contains 'product' %}
+          {{ product.title }}
+        {% elsif template contains 'blog' %}
+          {{ blog.title }}  
+        {% elsif template contains 'search' %}
+          {% if search.terms != blank %}
+            {{ search.terms }}
+          {% else %}
+            Search
+          {% endif %}
+        {% elsif template contains 'cart' %}
+          Cart
+        {% endif %}
+      </h3>
+    </div>
+  </div>
+</section>
+
 {% schema %}
   {
-    "name": "Section name",
-    "settings": []
+    "name": "Product  Banner",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "background_image",
+        "label": "Image"
+      }, {
+        "type": "text",
+        "id": "heading",
+        "label": "Heading"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Product  Banner",
+        "category": "Custom Sections"
+      }
+    ]
   }
 {% endschema %}
-
-{% stylesheet %}
-{% endstylesheet %}
-
-{% javascript %}
-{% endjavascript %}
