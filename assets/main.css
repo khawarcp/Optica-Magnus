@@ -118,7 +118,7 @@ ul.th_pb_list_ul.th_pb_list_ul_layout_3.th_pb_list_ul_index_5 {
 .th_pb_section .th_pb_bundle_layout_3{
   padding:0 !important;
 }
-body.gradient.template-product-full-frame-finder section.products-banner::after {
+/* body.gradient.template-product-full-frame-finder section.products-banner::after {
     position: absolute;
     content: "";
     background-image: url(https://cdn.shopify.com/s/files/1/0682/9624/5563/files/Finder_Page-New_458a8f6f-4699-44af-bebe-8144f0e08fdc.jpg?v=1675119202);
@@ -135,7 +135,7 @@ body.gradient.template-product-full-frame-finder section.products-banner {
 }
 body.gradient.template-product-full-frame-finder .banner-content {
     background: transparent !important;
-}
+} */
 
 
 
