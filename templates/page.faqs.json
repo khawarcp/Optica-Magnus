@@ -37,25 +37,144 @@
             "description": "<p>PL and LPL mounts are available for the Full Frame Finder.  Canon EF, Nikon, F, and several other still camera lens mounts are available by special order.<\/p>"
           }
         },
-        "a7bef274-0979-4f9e-a1e2-e3f96783054e": {
-          "type": "faqright",
+        "5885dc95-00b9-45e9-9f08-1190f8ff8df1": {
+          "type": "faqleft",
           "settings": {
-            "heading": "Do you sell finished sets or source lenses for clients?",
-            "description": "<p>Whether you already own the base lenses or are planning to assemble a set from scratch, you can send us a message to get a precise quote for the specific focal lengths you have in mind. We require full payment before rehousing begins, but a 25% non-refundable deposit will hold your place in line and we will contact you for the remaining balance when your set comes up in the queue<\/p>"
+            "heading": "How do I change the Lens Mount?",
+            "description": "<p>Loosen the Neutral Mount Lock Ring Safety Screw, located immediately to the rear of the Lens Mount Adapter.  Rotate the Neutral Mount Lock Ring<br\/>counterclockwise as seen from the front of the Finder.  Remove the Lens Mount Adapter, and reverse the process to install the replacement Lens Mount Adapter. Be sure to properly align the pin in the Intermediate Mount, with the slot in the Lens Mount Adapter.  Tighten the Intermediate Mount Lock Ring firmly hand tight, then be sure to tighten the Safety Screw.  Refer to the User Instruction PDF document on this web site to identify these parts if necessary.  <\/p>"
           }
         },
-        "c7605b97-949f-4812-80b0-11de6bf81eba": {
-          "type": "faqright",
+        "fcd7a5a6-95d7-40c8-9e04-57d74f6934dd": {
+          "type": "faqleft",
           "settings": {
-            "heading": "Do you sell finished sets or source lenses for clients?",
-            "description": "<p>Whether you already own the base lenses or are planning to assemble a set from scratch, you can send us a message to get a precise quote for the specific focal lengths you have in mind. We require full payment before rehousing begins, but a 25% non-refundable deposit will hold your place in line and we will contact you for the remaining balance when your set comes up in the queue<\/p>"
+            "heading": "How do I install the Anamorphic Adapter?",
+            "description": "<p>Remove four screws from the spherical cover plate on the top of the Finder, remove the plate, insert the Anamorphic adapter, then attach it with the same four screws. This can be accomplished in 5 minutes.<\/p>"
           }
         },
-        "46899be6-1b2b-4456-b8a6-19f9bce038f4": {
+        "4f41075f-f95f-4c4b-a695-741d71809f09": {
+          "type": "faqleft",
+          "settings": {
+            "heading": "How do I change from the Full Format Eyepiece to the Super 35 Eyepiece?",
+            "description": "<p>Remove the three screws that attach the Full Frame Eyepiece to the Full Frame Finder, then attach the Super 35 Eyepiece using those same three screws. This can be accomplished in under five minutes.<\/p>"
+          }
+        },
+        "4b222bbd-92e5-4317-8464-2aba74ca15e6": {
+          "type": "faqleft",
+          "settings": {
+            "heading": "Can I mount the Full Frame Finder on a tripod?",
+            "description": "<p>Yes, there is a 3\/8-16 threaded hole in the bottom of the handle assembly.  <\/p>"
+          }
+        },
+        "800da587-321e-4bde-add2-f25a655e38f2": {
+          "type": "faqleft",
+          "settings": {
+            "heading": "How do I adjust the Full Frame Finder Handle?",
+            "description": "<p>There is a lever to loosen the front to back positing adjustment slider, located on the left side of the Finder.A knob on the right side allows you to rotate the handle downward and forward to a comfortable position for use. <em>Be sure to loosen this knob two full turns, before rotating the handle ratchet mechanism.<\/em> Attempting to rotate<br\/>the handle ratchet mechanism with excessive force, without fully loosening the locking knob, might damage the ratchet mechanism.<\/p>"
+          }
+        },
+        "599e11a5-dfd2-4757-8908-147d95a676e3": {
           "type": "faqright",
           "settings": {
-            "heading": "What is the process for placing an order?",
-            "description": "<p>Whether you already own the base lenses or are planning to assemble a set from scratch, you can send us a message to get a precise quote for the specific focal lengths you have in mind. We require full payment before rehousing begins, but a 25% non-refundable deposit will hold your place in line and we will contact you for the remaining balance when your set comes up in the queue<\/p>"
+            "heading": "Is there light loss when you install an OpticalMagnus Xpander?",
+            "description": "<p>Yes. The amount varies depending on which Xpander you use. The amount of light loss is listed in the specifications for each Xpander.<br\/><\/p>"
+          }
+        },
+        "c9cdaa7b-e1ca-4a3e-95bd-890d9ddd941f": {
+          "type": "faqright",
+          "settings": {
+            "heading": "When you install an Optica Magnus Xpander, do the lensscales change? ",
+            "description": "<p>Yes, the lens scales change. New removable adhesive scales with corrected markings are available to install on a lens converted with an Optica Magnus Xpander.  <\/p>"
+          }
+        },
+        "b6fad3dd-d8bb-4737-b9f7-5077856cfadd": {
+          "type": "faqright",
+          "settings": {
+            "heading": "What lenses do the OM Xpanders fit?",
+            "description": "<p>Angenieux Optimo 24-290mm<\/p><p>Angenieux Optimo 17-80mm<\/p><p>Angenieux HR 25-250mm<\/p><p>Angenieux 17-102mm<\/p><p>Cooke 25-250mm<\/p><p>Cooke 20-100mm<\/p><p>Cooke 18-100mm<\/p><p>Cooke 20-60mm<\/p><p>These lenses all have a universal “neutral mount” on the rear end, just forward of the factory supplied PL mount.  There is a threaded collar located there, which you unscrew by hand, to remove the stock factory supplied PL mount, and replace it with the Xpander, which has a PL mount on the rear.  <\/p><p><\/p><p>Note: the Angenieux 17-80mm does not have the<br\/>Universal Mount. An Xpander available for this lens by special order.<\/p>"
+          }
+        },
+        "35f2f049-2b3f-496d-9e33-41c6a78f18c3": {
+          "type": "faqright",
+          "settings": {
+            "heading": "Can I install an OM Xpander on Fujinon zooms?",
+            "description": "<p>Yes, the Fujinon Premiere zoom lenses, by special order:<\/p><p>75-400mm<\/p><p>24–180mm<\/p><p>18-85mm<\/p>"
+          }
+        },
+        "ccc928d5-1e7e-4a06-bab1-31176826c3c2": {
+          "type": "faqright",
+          "settings": {
+            "heading": "What cameras are the OM Xpanders designed to fit?",
+            "description": "<p>Xpander’s are designed for mirrorless digital cinema cameras, such as the ARRI Alexa series of cameras, the Sony Venice series of cameras, and the Red Digital cameras. They are <em>NOT<\/em> to be used with film cameras with spinning mirror-shutters. <\/p>"
+          }
+        },
+        "beb53892-7f09-484e-8eec-21b35c230511": {
+          "type": "faqright",
+          "settings": {
+            "heading": "Why are there different OM Xpanders for Super 35 OpenGate, aren’t all zoom lenses the same?",
+            "description": "<p>No.  Some zoom lenses were designed to cover the smaller “Academy Aperture” and later lenses, such as the Angenieux 24-290 Optimo, were designed to cover larger “Super 35” aperture (also known as the<br\/>“Silent Aperture”)  Consequently there is one Xpander designed to enlarge the image of the lenses designed for the Academy Aperture up to S3 “Open Gate.” And <em>another<\/em> Xpander to do the same, for lenses, such as the<br\/>Angenieux 24-290 Optimo, that were designed to cover the larger Super 35 Aperture.<\/p>"
+          }
+        },
+        "6d45b436-0252-484e-9c9b-275803bc1d66": {
+          "type": "faqright",
+          "settings": {
+            "heading": "Why not just have one OM Xpander for all lenses toallow them to cover Super 35 Open Gate?",
+            "description": "<p>It’s all about minimizing light loss.  You could install the Academy to Open Gate<br\/>Xpander on a lens designed to cover the Super 35 Aperture, but it would have more light loss than an Xpander specifically designed to expand the larger<br\/>Super 35 Aperture to Open Gate. All the Optica Magnus Xpanders are custom designed to best optimize specific applications.  <\/p>"
+          }
+        },
+        "736a9da8-3a26-4f34-b8e4-dc1450c13d85": {
+          "type": "faqright",
+          "settings": {
+            "heading": "Can I install an OM Xpander myself?",
+            "description": "<p>Yes, you can do the installation yourself, without any<br\/>tools.<\/p>"
+          }
+        },
+        "8a215bbd-6257-4d5c-8047-3125976cf9b1": {
+          "type": "faqright",
+          "settings": {
+            "heading": "How do I install an OM Xpander on my lens?",
+            "description": "<p>First, mount the unmodified lens, with the factory stock PL mount attached at the rear of the lens, on your camera. Then carefully ascertain the lens holds focus on a target 10 feet (3 meters) away, throughout<br\/>the zoom range. If it does <em>not<\/em> hold focus, you will need to have the lens and camera properly collimated to factory flange-focal distance by a qualified service technician, before proceeding. Then, if the lens holds focus throughout the zoom range with the stock factory PL mount, unscrew the collar at the rear of the Cooke or Angenieux Zoom lens, just forward of the factory supplied PL mount. Remove and set aside the stock factory PL mount. Store it in a safe place. Inspect and verify the two mating surfaces: on the rear of the<br\/>lens neutral mount, and on the the front of the Xpander, <em>are free of grit, stray hairs, etc.<\/em> Verify that you align the slot in the lens flange on the<br\/>rear of the Xpander to be at the 1:30 o’clock position, when viewed from the front of the<br\/>lens, to properly mate with the index pin in the PL mount on the front of the camera. There is a pin in the back of the lens neutral mount that mates in one<br\/>of the slots in the front of the Xpander. Pick the slot in the Xpander that locates the slot in the PL mount flange at 1:30 o’clock. Make sure that pin is seated in the slot on the Xpander, before tightening the threaded ring.  You can slide the ring on the Xpander rearward toward the PL mount, to visually check the seating of the pin<br\/>in the slot on the Xpander.  Then attach the Xpander onto the lens neutral mount, tightening the threaded ring firmly hand tight.  Use caution not to cross-thread the fine threads in the neutral mount. <\/p>"
+          }
+        },
+        "a0bd1574-0d42-48c1-90ff-944ec340d84b": {
+          "type": "faqright",
+          "settings": {
+            "heading": "Can I install a 2X or 1.4X Extender on the rear of anOM Xpander?",
+            "description": "<p>No, because there is not enough space. The lens elements<br\/>in the rear of the Xpander will collide with the optics in the front of the Extender. If you want to use a 1.4x or 2x Extender with a lens, you must first remove the Xpander, re-install the factory stock PL lens mount on the lens, then attach the Extender.  <\/p>"
+          }
+        },
+        "f07cf6ba-b6bd-403f-a0c3-54f30c8b220b": {
+          "type": "faqright",
+          "settings": {
+            "heading": "Can I use an Optica Magnus Xpander on a prime lens?",
+            "description": "<p>No, prime lenses lack the neutral mount that you will find on the rear of Angenieux and Cooke zoom lenses.<\/p>"
+          }
+        },
+        "00d75835-4999-4be5-8a66-93cdbbb2bd74": {
+          "type": "faqright",
+          "settings": {
+            "heading": "I have installed my OM Xpander, and now the zoom lenswill not hold focus when I zoom. What is wrong?",
+            "description": "<p>First, you need to verify the lens, with the stock factory PL mount installed, holds focus throughout the entire zoom range, when mounted on your camera, and focused on a target 10 feet (3 meters) distant. If it <em>does not<\/em> hold focus during this test, you will need to have your lens<br\/>and camera serviced by a qualified service technician.  If the lens holds focus with the factory PL mount installed, then the first thing to look for is a little bit of dirt or grit between the Xpander and the lens neutral mount surface. Both need to be<br\/>very clean so that the flange-focal distance will remain correct when you install the Xpander. <\/p><p>Also, be certain that the pin in the rear of the neutral mount, fits into the slot on the front of the Xpander, before tightening<br\/>the mounting ring.  Also, in any<br\/>situation, all zoom lenses need to be properly supported with study matte box rods, especially the very heavy Angenieux 24-290 Optimo. If a lens is not<br\/>properly supported, it can change the carefully calibrated flange-focal distance.  <\/p>"
+          }
+        },
+        "aea68856-001c-4871-9b8a-f38eb1505acd": {
+          "type": "faqright",
+          "settings": {
+            "heading": "Are OM Xpanders available in LPL mount?",
+            "description": "<p>Yes, by special order.<\/p>"
+          }
+        },
+        "100c1e3f-f83c-40e7-8790-6625e3cf0dc3": {
+          "type": "faqright",
+          "settings": {
+            "heading": "Will a lens with an OM Xpander installed fit on a 35mmor 16mm film camera? (Or the unique Alexa Studio?)",
+            "description": "<p>No. If you<br\/>were to mount a lens with an Xpander on a film camera, it would shatter the spinning mirror-shutter. The back end of Xpanders have an engraved warning to <em>not<\/em> mount on cameras with a spinning mirror-shutter.  <\/p>"
+          }
+        },
+        "18aea9ac-acc8-48b3-99f2-8e07ce9a7d98": {
+          "type": "faqright",
+          "settings": {
+            "heading": "What is the difference between and Optica MagnusXpander and an 1.4x or 2x Extender?",
+            "description": "<p>Extenders have a fixed per-determined magnification,<br\/>either 1.4x or 2x, regardless of the lens they are mounted on. They are designed make the lenses more telephoto and are only optimized to cover the original format, eg: Super-35 to Super-35. Xpanders have a<br\/>magnification specifically tailored to provide sufficient magnification to cover the intended larger sensor size, with the minimum amount of light loss, and have well corrected optical performance. Optica Magnus Xpanders also utilize high quality optics, that retain all<br\/>the performance of the zoom lens. Optica Magnus Xpanders can be used as Extenders, but Extenders might not serve well as Expanders.<\/p>"
           }
         }
       },
@@ -64,9 +183,26 @@
         "b8dba806-05dc-4b6d-a3ac-074671dbefc0",
         "0e5d664f-1ae3-4bf2-aac2-519b24c97aab",
         "da8773a0-4beb-48da-9400-eea6b818279b",
-        "a7bef274-0979-4f9e-a1e2-e3f96783054e",
-        "c7605b97-949f-4812-80b0-11de6bf81eba",
-        "46899be6-1b2b-4456-b8a6-19f9bce038f4"
+        "5885dc95-00b9-45e9-9f08-1190f8ff8df1",
+        "fcd7a5a6-95d7-40c8-9e04-57d74f6934dd",
+        "4f41075f-f95f-4c4b-a695-741d71809f09",
+        "4b222bbd-92e5-4317-8464-2aba74ca15e6",
+        "800da587-321e-4bde-add2-f25a655e38f2",
+        "599e11a5-dfd2-4757-8908-147d95a676e3",
+        "c9cdaa7b-e1ca-4a3e-95bd-890d9ddd941f",
+        "b6fad3dd-d8bb-4737-b9f7-5077856cfadd",
+        "35f2f049-2b3f-496d-9e33-41c6a78f18c3",
+        "ccc928d5-1e7e-4a06-bab1-31176826c3c2",
+        "beb53892-7f09-484e-8eec-21b35c230511",
+        "6d45b436-0252-484e-9c9b-275803bc1d66",
+        "736a9da8-3a26-4f34-b8e4-dc1450c13d85",
+        "8a215bbd-6257-4d5c-8047-3125976cf9b1",
+        "a0bd1574-0d42-48c1-90ff-944ec340d84b",
+        "f07cf6ba-b6bd-403f-a0c3-54f30c8b220b",
+        "00d75835-4999-4be5-8a66-93cdbbb2bd74",
+        "aea68856-001c-4871-9b8a-f38eb1505acd",
+        "100c1e3f-f83c-40e7-8790-6625e3cf0dc3",
+        "18aea9ac-acc8-48b3-99f2-8e07ce9a7d98"
       ],
       "settings": {
       }
