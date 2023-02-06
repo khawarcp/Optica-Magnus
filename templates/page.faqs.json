@@ -30,6 +30,13 @@
             "description": "<p>the Mac App Store. There is also a Windows version available on request. You can design up to three frame line sets to be visible at the same time, using the app. Then print them on high temperature plastic<br\/>sheet, using a commonly available office laser printer. You then cut the design out using scissors, and install it in the Full Frame Finder through an access door covering a slot in the side. The only toon needed is a small Phillips screwdriver.  The multiple frame line formats can be common center, common top, or anywhere in between. All frame line dimensions are defined in millimeters, accurate to two decimal places. The 9:16 Vertical format is possible as well, either alone, or combined with horizontal formats. The directions on how do accomplish this are detailed in the User Instruction PDF document, available as a download on this web site.  <\/p>"
           }
         },
+        "da8773a0-4beb-48da-9400-eea6b818279b": {
+          "type": "faqleft",
+          "settings": {
+            "heading": "What lens mounts are available for the FullFrame Finder?",
+            "description": "<p>PL and LPL mounts are available for the Full Frame Finder.  Canon EF, Nikon, F, and several other still camera lens mounts are available by special order.<\/p>"
+          }
+        },
         "a7bef274-0979-4f9e-a1e2-e3f96783054e": {
           "type": "faqright",
           "settings": {
@@ -56,6 +63,7 @@
         "bf874d50-223c-4dc1-88d7-e54b6d2a86d6",
         "b8dba806-05dc-4b6d-a3ac-074671dbefc0",
         "0e5d664f-1ae3-4bf2-aac2-519b24c97aab",
+        "da8773a0-4beb-48da-9400-eea6b818279b",
         "a7bef274-0979-4f9e-a1e2-e3f96783054e",
         "c7605b97-949f-4812-80b0-11de6bf81eba",
         "46899be6-1b2b-4456-b8a6-19f9bce038f4"
