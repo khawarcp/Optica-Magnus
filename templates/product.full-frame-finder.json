@@ -61,7 +61,9 @@
       "settings": {
         "tab_heading_one": "More Information",
         "tab_heading_two": "Technical Specs",
-        "tab_heading_three": "Image Circle"
+        "tab_heading_three": "Image Circle",
+        "tab_heading_four": "User Manual",
+        "user_manual": "https:\/\/cdn.shopify.com\/s\/files\/1\/0682\/9624\/5563\/files\/Full_Frame_Finder_FrameFinder_Instructions_vs7.0.pdf?v=1675924890"
       }
     },
     "product-recommendations": {
