@@ -21,6 +21,13 @@
                     </span>
                   </a>
                 {% endif %}
+                {% if block.settings.button_text_2 != blank %}
+                  <a data-aos="zoom-in" href="{{ block.settings.button_url_2 }}" class="primary-btn">
+                    <span>
+                      {{ block.settings.button_text_2 }}
+                    </span>
+                  </a>
+                {% endif %}
                 <button id="scrollBtn" class="mx-auto d-block">
                   {%- render 'icon-scroll' -%}
                 </button>
@@ -61,11 +68,20 @@
           {
             "type": "text",
             "id": "button_text",
-            "label": "Button Text"
+            "label": "Primary Button Text"
           }, {
             "type": "url",
             "id": "button_url",
-            "label": "Button URL"
+            "label": "Primary Button URL"
+          },
+          {
+            "type": "text",
+            "id": "button_text_2",
+            "label": "Secondary Button Text"
+          }, {
+            "type": "url",
+            "id": "button_url_2",
+            "label": "Secondary Button URL"
           }
         ]
 
