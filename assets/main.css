@@ -951,6 +951,13 @@ button.shopify-payment-button__button::after {
   border-bottom: none;
 }
 
+.faq-col-heading {
+    font-size: 3rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+}
+
 @media only screen and (min-width: 1600px) {
   .drawer__inner {
     padding: 0 35px 0 20px !important;
