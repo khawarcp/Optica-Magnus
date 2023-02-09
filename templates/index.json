@@ -9,8 +9,10 @@
             "heading": "EXPANDING YOUR vision",
             "subheading": "OPTICA MAG<span>NUS<\/span>",
             "image": "shopify:\/\/shop_images\/Banner_02.jpg",
-            "button_text": "Expanders",
-            "button_url": "shopify:\/\/collections\/expanders"
+            "button_text": "Finder",
+            "button_url": "shopify:\/\/collections\/finder",
+            "button_text_2": "Expanders",
+            "button_url_2": "shopify:\/\/collections\/expanders"
           }
         },
         "40878181-5e45-4fee-93b9-1b87fbfb8f48": {
@@ -20,7 +22,9 @@
             "heading": "",
             "subheading": "",
             "button_text": "",
-            "button_url": ""
+            "button_url": "",
+            "button_text_2": "",
+            "button_url_2": ""
           }
         }
       },
