@@ -1650,8 +1650,11 @@ button.shopify-payment-button__button::after {
 }
 @media (max-width: 991px) {
   .slider-sec .slider-content-block .buttons-block .primary-btn {
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
   }
+  .slider-sec .slider-content-block .buttons-block .primary-btn:not(:first-child) {
+    margin-bottom: 0;
+}
 }
 .slider-sec .hero-slider-home {
   display: none;
