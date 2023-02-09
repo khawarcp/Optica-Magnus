@@ -1,162 +1,117 @@
-{% comment %}
 <section class="faqs-sec">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="faqs-wrap">
-                        <div class="accordion" id="accordionExample">
-                           {% for block in section.blocks %}
-                             {% if block.type == 'faqleft' %}
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="{{ block.id }}">
-                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#{{ block.id }}" aria-expanded="true"
-                                        aria-controls="{{ block.id }}">
-                                        {{ block.settings.heading }}
-                                    </button>
-                                </h2>
-                                <div id="{{ block.id }}" class="accordion-collapse collapse show"
-                                    aria-labelledby="{{ block.id }}" data-bs-parent="#accordionExample">
-                                    <div class="accordion-body">
-                                        {{ block.settings.description }}
-                                    </div>
-                                </div>
-                            </div>
-                            {% endif %}
-                          {% endfor %}
-                        </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="faqs-wrap">
+          <div class="accordion" id="accordionExample">
+            {% for block in section.blocks %}
+              {% if block.type == 'faqleft' %}
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="heading{{ forloop.index }}">
+                    <button
+                      class="accordion-button"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#coll-{{ forloop.index }}"
+                      aria-expanded="true"
+                      aria-controls="coll-{{ forloop.index }}"
+                    >
+                      {{ block.settings.heading }}
+                    </button>
+                  </h2>
+                  <div
+                    id="coll-{{ forloop.index }}"
+                    class="accordion-collapse collapse {% if forloop.first %}show{% endif %}"
+                    aria-labelledby="heading{{ forloop.index }}"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body">
+                      {{ block.settings.description }}
                     </div>
+                  </div>
                 </div>
-                <div class="col-md-6">
-                    <div class="faqs-wrap">
-                        <div class="accordion" id="accordionExample">
-                          {% for block in section.blocks %}
-                             {% if block.type == 'faqright' %}
-                            <div class="accordion-item active">
-                                <h2 class="accordion-header" id="{{ block.id }}">
-                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#collapse111" aria-expanded="true"
-                                        aria-controls="collapse111">
-                                        {{ block.settings.heading }}
-                                    </button>
-                                </h2>
-                                <div id="collapse111" class="accordion-collapse collapse"
-                                    aria-labelledby="{{ block.id }}" data-bs-parent="#accordionExample">
-                                    <div class="accordion-body">
-                                        {{ block.settings.description }}
-                                    </div>
-                                </div>
-                            </div>
-                           {% endif %}
-                          {% endfor %}
-                        </div>
-                    </div>
-                </div>
-            </div>
+              {% endif %}
+            {% endfor %}
+          </div>
         </div>
-    </section>
-
-{% endcomment %}
-
-
-
-    <section class="faqs-sec">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="faqs-wrap">
-                        <div class="accordion" id="accordionExample">
-                           {% for block in section.blocks %}
-                             {% if block.type == 'faqleft' %}
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="heading{{ forloop.index }}">
-                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#coll-{{ forloop.index }}" aria-expanded="true"
-                                        aria-controls="coll-{{ forloop.index }}">
-                                        {{ block.settings.heading }}
-                                    </button>
-                                </h2>
-                                <div id="coll-{{ forloop.index }}" class="accordion-collapse collapse {% if forloop.first %}show{% endif %}"
-                                    aria-labelledby="heading{{ forloop.index }}" data-bs-parent="#accordionExample">
-                                    <div class="accordion-body">
-                                       {{ block.settings.description}}
-                                    </div>
-                                </div>
-                            </div>
-                               {% endif %}
-                        {% endfor %}
-                        </div>
-                          
+      </div>
+      <div class="col-md-6">
+        <div class="faqs-wrap">
+          <div class="accordion" id="accordionExampleTwo">
+            {% for block in section.blocks %}
+              {% if block.type == 'faqright' %}
+                <div class="accordion-item active">
+                  <h2 class="accordion-header" id="heading{{ forloop.index }}">
+                    <button
+                      class="accordion-button"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#coll-{{ forloop.index }}"
+                      aria-expanded="true"
+                      aria-controls="coll-{{ forloop.index }}"
+                    >
+                      {{ block.settings.heading }}
+                    </button>
+                  </h2>
+                  <div
+                    id="coll-{{ forloop.index }}"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="heading{{ forloop.index }}"
+                    data-bs-parent="#accordionExampleTwo"
+                  >
+                    <div class="accordion-body">
+                      {{ block.settings.description }}
                     </div>
+                  </div>
                 </div>
-                <div class="col-md-6">
-                    <div class="faqs-wrap">
-                        <div class="accordion" id="accordionExampleTwo">
-                          {% for block in section.blocks %}
-                             {% if block.type == 'faqright' %}
-                            <div class="accordion-item active">
-                                <h2 class="accordion-header" id="heading{{ forloop.index }}">
-                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#coll-{{ forloop.index }}" aria-expanded="true"
-                                        aria-controls="coll-{{ forloop.index }}">
-                                        {{ block.settings.heading }}
-                                    </button>
-                                </h2>
-                                <div id="coll-{{ forloop.index }}" class="accordion-collapse collapse"
-                                    aria-labelledby="heading{{ forloop.index }}" data-bs-parent="#accordionExampleTwo">
-                                    <div class="accordion-body">
-                                        {{ block.settings.description }}
-                                    </div>
-                                </div>
-                            </div>
-                            {% endif %}
-                        {% endfor %}
-                        </div>
-                    </div>
-                </div>
-            </div>
+              {% endif %}
+            {% endfor %}
+          </div>
         </div>
-    </section>
+      </div>
+    </div>
+  </div>
+</section>
 
 {% schema %}
-  {
-    "name": "Faq Page",
-    "settings": [],
-    "blocks":[
-      {
-        "type": "faqleft",
-        "name": "Faqs left",
-        "settings":[
-          {
-            "type": "text",
-            "id": "heading",
-            "label": "Heading"
-          },
-          {
-            "type": "richtext",
-            "id": "description",
-            "label": "Description"
-          }
-        ]
-      },
-      {
-        "type": "faqright",
-        "name": "Faqs right",
-        "settings":[
-          {
-            "type": "text",
-            "id": "heading",
-            "label": "Heading"
-          },
-          {
-            "type": "richtext",
-            "id": "description",
-            "label": "Description"
-          }
-        ]
-      }
-    ]
-  }
+{
+  "name": "Faq Page",
+  "settings": [],
+  "blocks":[
+    {
+      "type": "faqleft",
+      "name": "Faqs left",
+      "settings":[
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "Heading"
+        },
+        {
+          "type": "richtext",
+          "id": "description",
+          "label": "Description"
+        }
+      ]
+    },
+    {
+      "type": "faqright",
+      "name": "Faqs right",
+      "settings":[
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "Heading"
+        },
+        {
+          "type": "richtext",
+          "id": "description",
+          "label": "Description"
+        }
+      ]
+    }
+  ]
+}
 {% endschema %}
 
 {% stylesheet %}
