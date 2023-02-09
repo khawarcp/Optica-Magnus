@@ -1590,6 +1590,10 @@ button.shopify-payment-button__button::after {
   .slider-sec .slider-card {
     height: 52.9rem;
   }
+  .slider-sec .slider-content-block .buttons-block .primary-btn:not(:first-child) {    
+    margin-top: 0px;
+}
+  
 }
 .slider-sec .slider-card>.container {
     height: 100%;
