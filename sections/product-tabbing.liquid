@@ -25,6 +25,13 @@
           </span>
         </li>
        {% endif %}
+       
+         <li {% if product.metafields.custom.text_description == blank and product.metafields.custom.technical_specs == blank %} class="active" {% endif %}>
+          <span data-toggle="image_circle_tab">
+            USER Manual
+          </span>
+        </li>
+       
       </ul>
       <div class="tab-content">
         
