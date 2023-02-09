@@ -20,15 +20,14 @@
         {% if product.metafields.custom.image_circle != blank %}
          <li {% if product.metafields.custom.text_description == blank and product.metafields.custom.technical_specs == blank %} class="active" {% endif %}>
           <span data-toggle="image_circle_tab">
-            {{ section.settings.tab_heading_three }}
-            
+            {{ section.settings.tab_heading_three }}            
           </span>
         </li>
        {% endif %}
        
          <li {% if product.metafields.custom.text_description == blank and product.metafields.custom.technical_specs == blank %} class="active" {% endif %}>
           <span data-toggle="image_circle_tab">
-            USER Manual
+            {{ section.settings.tab_heading_four }}
           </span>
         </li>
        
@@ -94,6 +93,12 @@
         "id": "tab_heading_three",
         "default": "Image Circle",
         "label": "Tab Three"
+      },
+      {
+        "type": "text",
+        "id": "tab_heading_four",
+        "default": "User Manual",
+        "label": "Tab Four"
       }
     ]
   }
