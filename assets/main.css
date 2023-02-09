@@ -1581,6 +1581,12 @@ button.shopify-payment-button__button::after {
   padding-top: 3.3rem;
   padding-bottom: 3.3rem;
 }
+
+.slider-sec .slider-content-block .buttons-block .primary-btn:not(first-child) {
+    margin-bottom: 0;
+    margin-top: 15px;
+}
+
 @media (max-width: 991px) {
   .slider-sec .slider-card {
     height: 52.9rem;
