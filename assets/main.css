@@ -1583,7 +1583,7 @@ button.shopify-payment-button__button::after {
 }
 
 .slider-sec .slider-content-block .buttons-block .primary-btn:not(:first-child) {    
-    margin-top: 1rem;
+    margin-top: 1.5rem;
 }
 
 @media (max-width: 991px) {
