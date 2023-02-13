@@ -37,6 +37,7 @@
     },
     "d113bb7b-a619-4459-9617-13fc7c19a48a": {
       "type": "index-services",
+      "disabled": true,
       "blocks": {
         "fd0e6349-84d9-43f1-94cc-11b87fe3b197": {
           "type": "service",
