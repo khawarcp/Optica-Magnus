@@ -24,13 +24,13 @@
           </span>
         </li>
        {% endif %}
-       
+       {% if product.metafields.custom.user_manual != blank %}
          <li {% if product.metafields.custom.text_description == blank and product.metafields.custom.technical_specs == blank %} class="active" {% endif %}>
           <span data-toggle="user-manual">
             {{ section.settings.tab_heading_four }}
           </span>
         </li>
-       
+       {% endif %}
       </ul>
       <div class="tab-content">
         
@@ -56,11 +56,13 @@
           {% endif %}
           </div>
         </div>
+        {% if product.metafields.custom.user_manual != blank %}
         <div data-aos="fade-up" data-aos-duration="1100" data-target="user-manual" class="ctm-tabs-pan {% if product.metafields.custom.text_description == blank and product.metafields.custom.technical_specs == blank %} active {% endif %}">
           <div class="description_text">
              Click <a href="{{ section.settings.user_manual }}" download="Full_Frame_Finder_FrameFinder_Instructions_vs7.0.pdf"  target="_blank">here</a> download our User Manual
           </div>
         </div>
+          {% endif %}
       </div>
 
     </div>
