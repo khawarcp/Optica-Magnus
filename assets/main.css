@@ -2790,6 +2790,33 @@ button.shopify-payment-button__button::after {
     padding-bottom: 4.5rem;
     padding-top: 4.5rem;
   }
+  .slider-sec .slider-card {
+    background-position: 0px 0px;
+}
+
+#site-footer .ft-links-row>div[class^=ft] {
+    width: 50%;
+    margin-bottom: 20px;
+}
+
+#site-footer .ft-links-row {
+    gap: 0px;
+}
+
+.ft-logo-block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#site-footer .ft-logo-block .ft-logo {
+    width: 40%;
+    max-width: 40%;
+}
+
+#site-footer .ft-caontact {
+    width: 50%;
+}
 }
 
 .privacy-content .privacy-desc-block {
