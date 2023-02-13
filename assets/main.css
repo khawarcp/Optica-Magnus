@@ -1515,11 +1515,12 @@ button.shopify-payment-button__button::after {
     width: calc(50% - 2.5rem);
   }
 }
-@media (max-width: 700px) {
+/* @media (max-width: 700px) {
   #site-footer .ft-links-row > div[class^=ft] {
     width: 100%;
   }
 }
+*/
 #site-footer .ft-title {
   font-size: 1.6rem;
   line-height: 1.9rem;
