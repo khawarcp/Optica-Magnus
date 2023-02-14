@@ -35,6 +35,14 @@
       "settings": {
       }
     },
+    "c86af7f4-7512-45cc-b779-6e1aa5cd95fe": {
+      "type": "index-richtext",
+      "settings": {
+        "heading": "",
+        "subheading": "",
+        "text": ""
+      }
+    },
     "d113bb7b-a619-4459-9617-13fc7c19a48a": {
       "type": "index-services",
       "disabled": true,
@@ -106,6 +114,7 @@
   },
   "order": [
     "98bf8f6a-3698-414f-8eda-c161d5e5bdf5",
+    "c86af7f4-7512-45cc-b779-6e1aa5cd95fe",
     "d113bb7b-a619-4459-9617-13fc7c19a48a",
     "39c1d8e8-97ca-4b9d-ba8a-22d0da4be835",
     "d12cba3a-9e17-4eb9-b6ac-a942856c7501"
