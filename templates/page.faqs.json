@@ -173,8 +173,8 @@
         "18aea9ac-acc8-48b3-99f2-8e07ce9a7d98": {
           "type": "faqright",
           "settings": {
-            "heading": "What is the difference between and Optica MagnusXpander and an 1.4x or 2x Extender?",
-            "description": "<p>Extenders have a fixed per-determined magnification,<br\/>either 1.4x or 2x, regardless of the lens they are mounted on. They are designed make the lenses more telephoto and are only optimized to cover the original format, eg: Super-35 to Super-35. Xpanders have a<br\/>magnification specifically tailored to provide sufficient magnification to cover the intended larger sensor size, with the minimum amount of light loss, and have well corrected optical performance. Optica Magnus Xpanders also utilize high quality optics, that retain all<br\/>the performance of the zoom lens. Optica Magnus Xpanders can be used as Extenders, but Extenders might not serve well as Expanders.<\/p>"
+            "heading": "What is the difference between and Optica Magnus Xpander and an 1.4x or 2x Extender?",
+            "description": "<p>Extenders have a fixed pre-determined magnification:<br\/>either 1.4x or 2x, regardless of the lens they are mounted on. They are designed make the lenses more telephoto and are only optimized to cover the original format, eg: Super-35 to Super-35. Xpanders have a<br\/>magnification specifically tailored to provide sufficient magnification to cover the intended larger sensor size, with the minimum amount of light loss, and have well corrected optical performance. Optica Magnus Xpanders also utilize high quality optics that retain all<br\/>the performance of the zoom lens. <\/p>"
           }
         }
       },
