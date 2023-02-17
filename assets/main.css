@@ -2039,8 +2039,8 @@ button.shopify-payment-button__button::after {
   text-transform: uppercase;
 }
 .utline{
-    font-size: 1.7rem;
-    font-weight: 700;
+    font-size: 1.5rem;
+    font-weight: 600;
 }
 @media (max-width: 767px) {
   .product-dt-sec .product-dt-desc-block .title {
