@@ -152,6 +152,9 @@
           "0c381470-5807-485a-ae87-5268180f7f84",
           "announcement-bar-0"
         ],
+        "custom_css": [
+          "h2 {font-size: 64px;}"
+        ],
         "settings": {
         }
       },
