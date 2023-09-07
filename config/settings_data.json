@@ -128,29 +128,29 @@
       "announcement-bar": {
         "type": "announcement-bar",
         "blocks": {
-          "announcement-bar-0": {
-            "type": "announcement",
-            "settings": {
-              "text": "Welcome to our store",
-              "text_alignment": "center",
-              "color_scheme": "background-1",
-              "link": ""
-            }
-          },
           "0c381470-5807-485a-ae87-5268180f7f84": {
             "type": "announcement",
-            "disabled": true,
             "settings": {
               "text": "Visit us at IBC, Chiopt 12F52 and Viltrox 12B54",
               "text_alignment": "center",
               "color_scheme": "accent-1",
               "link": ""
             }
+          },
+          "announcement-bar-0": {
+            "type": "announcement",
+            "disabled": true,
+            "settings": {
+              "text": "Welcome to our store",
+              "text_alignment": "center",
+              "color_scheme": "background-1",
+              "link": ""
+            }
           }
         },
         "block_order": [
-          "announcement-bar-0",
-          "0c381470-5807-485a-ae87-5268180f7f84"
+          "0c381470-5807-485a-ae87-5268180f7f84",
+          "announcement-bar-0"
         ],
         "settings": {
         }
