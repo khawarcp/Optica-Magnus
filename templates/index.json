@@ -6,7 +6,7 @@
         "95dc7c6e-1c6f-4958-bed7-4c5409c3f942": {
           "type": "Slide",
           "settings": {
-            "heading": "EXPANDING YOUR vision",
+            "heading": "EXPANDING YOUR Image",
             "subheading": "OPTICA MAGNUS",
             "image": "shopify:\/\/shop_images\/Banner_02.jpg",
             "button_text": "Full Frame Finder",
@@ -45,7 +45,6 @@
     },
     "d113bb7b-a619-4459-9617-13fc7c19a48a": {
       "type": "index-services",
-      "disabled": true,
       "blocks": {
         "fd0e6349-84d9-43f1-94cc-11b87fe3b197": {
           "type": "service",
@@ -90,6 +89,7 @@
         "a3c9cdf2-c7f7-44a2-8bbf-23be91abd941",
         "7f656c73-eba7-4f18-a87e-854163614ed6"
       ],
+      "disabled": true,
       "settings": {
       }
     },
