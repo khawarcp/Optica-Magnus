@@ -245,7 +245,7 @@
         "type": "custom-header",
         "settings": {
           "primary_logo": "shopify:\/\/shop_images\/OM_Site_Logo_one_box_blue_Sat.png",
-          "secondary_logo": "shopify:\/\/shop_images\/OM_Site_Logo_1_box_Color.png",
+          "secondary_logo": "shopify:\/\/shop_images\/OM_Site_Logo_one_box_blue_Sat.png",
           "mobile_logo": "shopify:\/\/shop_images\/logo-white.png",
           "main_menu": "main-menu"
         }
