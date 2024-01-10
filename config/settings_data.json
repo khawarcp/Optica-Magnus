@@ -225,7 +225,7 @@
       "custom-footer": {
         "type": "custom-footer",
         "settings": {
-          "footer_logo": "shopify:\/\/shop_images\/OM_Site_Logo_1_box_Color.png",
+          "footer_logo": "shopify:\/\/shop_images\/OM_Site_Logo_one_box_blue_Sat.png",
           "address": "7095 Hollywood Boulevard\n#575 Hollywood, CA 90028",
           "phone": "info@opticamagnus.com",
           "button_text": "Visits by Appointment Only",
@@ -244,7 +244,7 @@
       "custom-header": {
         "type": "custom-header",
         "settings": {
-          "primary_logo": "shopify:\/\/shop_images\/OM_Site_Logo_1_box_Color.png",
+          "primary_logo": "shopify:\/\/shop_images\/OM_Site_Logo_one_box_blue_Sat.png",
           "secondary_logo": "shopify:\/\/shop_images\/OM_Site_Logo_1_box_Color.png",
           "mobile_logo": "shopify:\/\/shop_images\/logo-white.png",
           "main_menu": "main-menu"
